@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Окна с завода</title>
+
+		<!-- Bootstrap -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header>
+		 <div class="container">
+			 <div class="row">
+				 <div class="col-md-6 col-xs-12">
+					 <div class="site_name">
+						 <h2>Окна с завода!</h2>
+						 <button type="button" data-toggle="modal" data-target="#callback">вызвать замерщика</button>
+					 </div>
+				 </div>
+				 <div class="col-md-6 col-xs-12">
+					 <div class="call_back">
+						 <span>Звоните с 8:00 до 23:00 ежедневно</span>
+						 <a href="tel:(8482) 78-55-24">(8482) 78-55-24</a>
+						 <button type="button" data-toggle="modal" data-target="#nightShare">перезвоните мне</button>
+					 </div>
+				 </div>
+			 </div>
+		 </div>
+	 </header>
+	 <section id="first_screen">
+		 <div class="container">
+			 <div class="row">
+				<div class="col-xs-12">
+					<div class="discount">
+						<h1>Пластиковые окна <span>в Москве</span></h1>
+						<span class="percent">15%</span>
+						<div class="plate">
+							<h2>скидка</h2>
+							<div class="days">7</div>
+							<span>только дней</span>
+						</div>
+						<button type="button" data-toggle="modal" data-target="#callback">Хочу ещё дешевле!</button>
+					</div>
+				</div>
+			 </div>
+		 </div>
+	 </section>
+	 <section id="saving">
+		 <div class="container">
+			 <div class="row">
+				 <div class="col-xs-12 text-center saving_heading">
+					 <h2>ЗАКАЖИ ОКНА С ЗАВОДА И НЕ ПЛАТИ</h2>
+				 </div>
+			 </div>
+			 <div class="row">
+				 <div class="col-xs-12">
+					 <div class="saving_schema">
+						 <ul>
+							 <li class="box-icon">
+								 <img src="img/shop-icon.png" alt="За аренду магазинов">
+								 <span>За аренду <br> магазинов</span>
+								 <span class="small">Экономия</span>
+								 <span class="cena">1 700 руб.</span>
+							 </li>
+							 <li class="box-icon">
+								<img src="img/coins-icon.png" alt="Зарплату продавцам">
+								<span>Зарплату <br> продавцам</span>
+								<span class="small">Экономия</span>
+								<span class="cena">1 250 руб.</span>
+							 </li>
+							 <li class="box-icon">
+								<img src="img/group-icon.png" alt="Процент посредникам">
+								<span>Процент <br> посредникам</span>
+								<span class="small">Экономия</span>
+								<span class="cena">900 руб.</span>
+							 </li>
+							 <li class="box-icon before_no_plus">
+								<img src="img/bank-icon.png" alt="Налоговые сборы">
+								<span>Налоговые <br> сборы</span>
+								<span class="small">Экономия</span>
+								<span class="cena">1 200 руб.</span>
+							 </li>
+						 </ul>
+						 <div class="sum">
+							<span>Вы экономите</span>
+							<h2>5 050 руб.</h2>
+						 </div>
+					 </div>
+				 </div>
+			 </div>
+		 </div>
+	 </section>
+	 <section id="order">
+		 <div class="container">
+			 <div class="row">
+				 <div class="col-xs-12 text-center order_heading">
+					 <h2>ЗАКАЖИ СЕГОДНЯ<br> ОКНА С ЗАВОДА СО СКИДКОЙ 73%</h2>
+				 </div>
+			 </div>
+			 <div class="row">
+				 <div class="col-md-6">
+					 <div class="order_counter">
+						<span>Осталось окон:</span>
+						<div class="counter_box">
+							<span>59</span>
+						</div>
+					</div>					 
+				 </div>
+				 <div class="col-md-6">
+					 <div class="order_form">
+						<form>
+								<label for="quantity">Впишите количество окон, которые Вы хотите купить
+								</label>
+								<input class="quantity" type="number" name="quantity" id="quantity" placeholder="3" required> 
+								<span class="pieces">шт.</span>
+								<input class="mask_phone" type="tel" name="tel" placeholder="Ваш телефон" required>
+								<button>купить окна со скидкой</button>
+								<p>Расчётное время окончания акции: </p>
+								<span>12 часов!</span>
+						</form>
+					 </div>
+				 </div>
+			 </div>
+		 </div>
+	 </section>
+	 <section id="collaborators">
+		 <div class="container">
+			 <div class="row">
+				 <div class="col-xs-12 text-center collaborators_heading">
+					 <h2>ДОСКА ПОЧЁТА ЛУЧШИХ СОТРУДНИКОВ
+						НАШЕГО ЗАВОДА! НАША ГОРДОСТЬ!</h2>
+				 </div>
+			 </div>
+			 <div class="row">
+				 <div class="col-xs-12 text-center callaborators_slider">
+					 <div class="slider">
+						 <div class="sl">
+							<div class="sl_content">
+								<div class="img_box">
+									<img src="img/photo.png" alt="Фото работника">
+								</div>
+								<span class="name">Алексей Пономорёв</span>
+								<span class="profession">Главный инженер</span>
+								<span class="experience">Опыт работы: <span class="year">7 лет</span></span>
+							</div>
+						 </div>
+						 <div class="sl">
+							<div class="sl_content">
+								<div class="img_box">
+									<img src="img/photo.png" alt="Фото работника">
+								</div>
+								<span class="name">Алексей Пономорёв</span>
+								<span class="profession">Главный инженер</span>
+								<span class="experience">Опыт работы: <span class="year">7 лет</span></span>
+							</div>
+						 </div>
+						 <div class="sl">
+							<div class="sl_content">
+								<div class="img_box">
+									<img src="img/photo.png" alt="Фото работника">
+								</div>
+								<span class="name">Алексей Пономорёв</span>
+								<span class="profession">Главный инженер</span>
+								<span class="experience">Опыт работы: <span class="year">7 лет</span></span>
+							</div>
+						 </div>
+						 <div class="sl">
+							<div class="sl_content">
+								<div class="img_box">
+									<img src="img/photo.png" alt="Фото работника">
+								</div>
+								<span class="name">Алексей Пономорёв</span>
+								<span class="profession">Главный инженер</span>
+								<span class="experience">Опыт работы: <span class="year">7 лет</span></span>
+							</div>
+						 </div>
+						 <div class="sl">
+							<div class="sl_content">
+								<div class="img_box">
+									<img src="img/photo.png" alt="Фото работника">
+								</div>
+								<span class="name">Алексей Пономорёв</span>
+								<span class="profession">Главный инженер</span>
+								<span class="experience">Опыт работы: <span class="year">7 лет</span></span>
+							</div>
+						 </div>
+						 <div class="sl">
+							<div class="sl_content">
+								<div class="img_box">
+									<img src="img/photo.png" alt="Фото работника">
+								</div>
+								<span class="name">Алексей Пономорёв</span>
+								<span class="profession">Главный инженер</span>
+								<span class="experience">Опыт работы: <span class="year">7 лет</span></span>
+							</div>
+						 </div>
+						 <div class="sl">
+							<div class="sl_content">
+								<div class="img_box">
+									<img src="img/photo.png" alt="Фото работника">
+								</div>
+								<span class="name">Алексей Пономорёв</span>
+								<span class="profession">Главный инженер</span>
+								<span class="experience">Опыт работы: <span class="year">7 лет</span></span>
+							</div>
+						 </div>
+						 <div class="sl">
+							<div class="sl_content">
+								<div class="img_box">
+									<img src="img/photo.png" alt="Фото работника">
+								</div>
+								<span class="name">Алексей Пономорёв</span>
+								<span class="profession">Главный инженер</span>
+								<span class="experience">Опыт работы: <span class="year">7 лет</span></span>
+							</div>
+						 </div>
+						 <div class="sl">
+							<div class="sl_content">
+								<div class="img_box">
+									<img src="img/photo.png" alt="Фото работника">
+								</div>
+								<span class="name">Алексей Пономорёв</span>
+								<span class="profession">Главный инженер</span>
+								<span class="experience">Опыт работы: <span class="year">7 лет</span></span>
+							</div>
+						 </div>
+					 </div>
+				 </div>
+			 </div>
+		 </div>
+	 </section>
+	 <section id="compare_company">
+		 <div class="container">
+			 <div class="row">
+				 <div class="col-xs-12 text-center compare_heading">
+					 <h2>ЗАКАЖИТЕ ОКНА НАПРЯМУЮ С ЗАВОДА!</h2>
+					 <span class="benefit">Выгода очевидна, с завода дешевле</span>
+				 </div>
+			 </div>
+			 <div class="row">
+				 <div class="col-lg-3 col-md-6 col-xs-12 text-center">
+					 <div class="company">
+						 <span class="here">Дилеры по окнам</span>
+						 <span class="cena">2 770 руб.</span>
+						 <div class="box_info">
+							 <span class="info">Срок изготовления:</span>
+							 <span class="term">7 дней</span>
+						 </div>
+						 <div class="box_info">
+							<span class="info">Разработчик профиля:</span>
+							<span class="term">Германия</span>
+						 </div>
+						 <div class="box_info rating">
+							 <span class="info">Качество:</span>
+							 <i class="fa fa-star" aria-hidden="true"></i>
+							 <i class="fa fa-star" aria-hidden="true"></i>
+							 <i class="fa fa-star" aria-hidden="true"></i>
+							 <i class="fa fa-star-half-o" aria-hidden="true"></i>
+							 <i class="fa fa-star-o" aria-hidden="true"></i>
+						 </div>
+					 </div>
+				 </div>
+				 <div class="col-lg-3 col-md-6 col-xs-12 text-center">
+					<div class="company">
+						<span class="here">Дилеры по окнам</span>
+						<span class="cena">2 770 руб.</span>
+						<div class="box_info">
+							<span class="info">Срок изготовления:</span>
+							<span class="term">7 дней</span>
+						</div>
+						<div class="box_info">
+						  <span class="info">Разработчик профиля:</span>
+						  <span class="term">Германия</span>
+						</div>
+						<div class="box_info rating">
+							<span class="info">Качество:</span>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-half-o" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+						</div>
+					</div>
+				 </div>
+				 <div class="col-lg-3 col-md-6 col-xs-12 text-center">
+					<div class="factory">
+						<span class="here">Пластиковые окна с завода!</span>
+						<span class="cena">2 170 руб.</span>
+						<div class="box_info">
+							<span class="info">Срок изготовления:</span>
+							<span class="term">2 дней</span>
+						</div>
+						<div class="box_info">
+						  <span class="info">Разработчик профиля:</span>
+						  <span class="term">Германия</span>
+						</div>
+						<div class="box_info rating">
+							<span class="info">Качество:</span>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-half-o" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+						</div>
+						<button type="button" data-toggle="modal" data-target="#callback">купить окна</button>
+					</div>
+				 </div>
+				 <div class=" col-lg-3 col-md-6 col-xs-12 text-center">
+					<div class="company">
+						<span class="here">Дилеры по окнам</span>
+						<span class="cena">2 770 руб.</span>
+						<div class="box_info">
+							<span class="info">Срок изготовления:</span>
+							<span class="term">7 дней</span>
+						</div>
+						<div class="box_info">
+						  <span class="info">Разработчик профиля:</span>
+						  <span class="term">Германия</span>
+						</div>
+						<div class="box_info rating">
+							<span class="info">Качество:</span>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-half-o" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+						</div>
+					</div>
+				 </div>
+			 </div>
+		 </div>
+	 </section>
+	 <section id="delivery">
+		 <div class="container">
+			 <div class="row">
+				 <div class="col-xs-12">
+					 <div class="delivery-heading">
+						 <h2>Внимание!</h2>
+						 <span>Только в этом месяце</span>
+						 <p>Доставим окна <span>БЕСПЛАТНО</span> в любую точку города Москва.</p>
+					 </div>
+					 <div class="delivery_form">
+						 <form>
+								<input class="mask_phone" type="tel" name="tel" placeholder="Ваш телефон" required>
+								<button>заказать</button>
+						 </form>
+					 </div>
+				 </div>
+			 </div>
+		 </div>
+	 </section>
+	 <section id="certificate">
+		 <div class="container">
+			 <div class="row">
+				 <div class="col-xs-12 text-center certificate_heading">
+					<h2>С ЗАВОДА ТОЧНО БУДЕТ КАЧЕСТВЕННО!</h2>
+					<p>Наша продукция прошла сертификацию и соответствует всем необходимым нормам безопасной и комфортной эксплуатации.			
+					</p>
+					<span>Изготовление окон строго по ГОСТу.</span>
+				 </div>
+			 </div>
+			 <div class="row">
+				 <div class="col-md-4 col-xs-12 text-center">
+					 <div class="certificate_box">
+						 <img src="img/certificate.jpg" alt="Сертификат">
+					 </div>
+				 </div>
+				 <div class="col-md-4 col-xs-12 text-center">
+					 <div class="certificate_box">
+						 <img src="img/certificate.jpg" alt="Сертификат">
+					 </div>
+				 </div>
+				 <div class="col-md-4 col-xs-12 text-center">
+					 <div class="certificate_box">
+						 <img src="img/certificate.jpg" alt="Сертификат">
+					 </div>
+				</div>
+			 </div>
+			 <div class="row">
+				 <div class="col-lg-6 col-lg-offset-6 col-xs-12">
+					 <div class="printing">
+						 <img src="img/stamp.png" alt="Печать">
+					 </div>
+					 <div class="chief">
+						 <span>Начальник производства 
+								оконных конструкций</span>
+					 </div>
+					 <div class="painting">
+						 <img src="img/painting.png" alt="Роспись">
+					 </div>
+				 </div>
+			 </div>
+		 </div>
+	 </section>
+	 <section id="sms">
+		 <div class="container">
+			 <div class="row">
+				 <div class="col-xs-12 text-center sms_heading">
+					 <h2>Завод №1 «Пластиковые окна Окей»!</h2>
+					 <p>Производство окон по низким ценам основная задача завода. Для Вас представлены любые окна – по самым низким ценам в Тольятти! Вся продукция соответствует строгим нормативам качества 	и проходит 3-х ступенчатую проверку. Пластиковые окна от производителя - ВСЕГДА ДЕШЕВЛЕ!
+					 </p>
+				 </div>
+			 </div>
+			 <div class="row">
+				 <div class="col-xs-12">
+					 <div class="sms_form">
+						<p>Впишите свой телефон и получите смс-купон на скидку:</p>
+						 <form>
+							 <input class="mask_phone" type="tel" name="tel" placeholder="Ваш телефон" required>
+							 <button>сделать выгоднее</button>
+						 </form>
+					 </div>
+					 <div class="sms_discount">
+						 <span>Дополнительная</span>
+						 <h2>SMS-скидка</h2>
+					 </div>
+				 </div>
+			 </div>
+		 </div>
+	 </section>
+	 <section id="gift">
+		 <div class="container">
+			 <div class="row">
+				 <div class="col-md-4 col-xs-12">
+					 <div class="gift_box">
+						 <span>Вам точно понравится</span>
+						 <img src="img/gift.png" alt="Коробка с подарком">
+					 </div>
+				 </div>
+				 <div class="col-md-8 col-xs-12 gift_heading">
+					 <h2>Подарок ВСЕМ кто обратится до конца этой недели!</h2>
+					 <p>ВНИМАНИЕ! Позвоните прямо сейчас и Вы получите абсолютно БЕСПЛАТНО один из 5 полезных подарков необходимых всем.
+					 </p>
+					 <input class="mask_phone" type="tel" name="tel" placeholder="Ваш телефон" required>
+					 <button>получить подарок</button>
+				 </div>
+			 </div>
+		 </div>
+	 </section>
+	 <section id="advantage">
+		 <div class="container">	
+			 <div class="row">
+				 <div class="col-xs-12 text-center advantage_heading">
+					 <h2>производим только качественные пластиковые окна</h2>
+					 <p>Пластик — хороший, но требовательный материал,
+						поэтому мы следим за чётким производственным процессом.
+					</p>
+				 </div>
+			 </div>
+			 <div class="row">
+				 <div class="col-md-3 col-xs-12 text-center icon-box">
+						<img src="img/advantage1.png" alt="Качественный профиль">
+						<p>Качественный профиль</p>
+				 </div>
+				 <div class="col-md-3 col-xs-12 text-center icon-box">
+						<img src="img/advantage2.png" alt="оответствие ГОСТам">
+						<p>Cоответствие ГОСТам</p>
+				 </div>
+				 <div class="col-md-3 col-xs-12 text-center icon-box">
+						<img src="img/advantage3.png" alt="Проверка и испытания">
+						<p>Проверка и испытания</p>
+				 </div>
+				 <div class="col-md-3 col-xs-12 text-center icon-box">
+						<img src="img/advantage4.png" alt="Монтаж по ГОСТу">
+						<p>Монтаж по <br> ГОСТу</p>
+				 </div>
+			 </div>
+		 </div>
+	 </section>
+	 <section id="portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 text-center portfolio_heading">
+					<h2>ОКНА С ЗАВОДА УСТАНОВЛЕННЫЕ В 2017 ГОДУ</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="portfolio_slider">
+							<div class="sl">
+									<div class="img_box">
+										<img src="img/slider-box-img.png" alt="Окно">
+									</div>
+									<div class="info_box">
+										<span>Окна на балкон</span>
+										<ul>
+											<li>Клиент: Надежда Разина</li>
+											<li>Тольятти, ул.Автостроителей 70</li>
+											<li>Номер договора: <span>856126</span></li>
+											<li>Стоимость: <span>35 100 р.</span></li>
+										</ul>
+										<div class="totals">
+											<span>Всего </span>
+											<div class="cena"><span>25 000 руб.</span></div>
+										</div>
+										<div class="buy">
+											<span class="arrow_left">Купить сегодня со скидкой</span>
+											<button type="button" data-toggle="modal" data-target="#callback">купить окна</button>
+										</div>
+									</div>
+								</div>
+								<div class="sl">
+									<div class="img_box">
+										<img src="img/slider-box-img.png" alt="Окно">
+									</div>
+									<div class="info_box">
+										<span>Окна на балкон</span>
+										<ul>
+											<li>Клиент: Надежда Разина</li>
+											<li>Тольятти, ул.Автостроителей 70</li>
+											<li>Номер договора: <span>856126</span></li>
+											<li>Стоимость: <span>35 100 р.</span></li>
+										</ul>
+										<div class="totals">
+											<span>Всего </span>
+											<div class="cena"><span>25 000 руб.</span></div>
+										</div>
+										<div class="buy">
+											<span class="arrow_left">Купить сегодня со скидкой</span>
+											<button type="button" data-toggle="modal" data-target="#callback">купить окна</button>
+										</div>
+									</div>
+								</div>
+								<div class="sl">
+									<div class="img_box">
+										<img src="img/slider-box-img.png" alt="Окно">
+									</div>
+									<div class="info_box">
+										<span>Окна на балкон</span>
+										<ul>
+											<li>Клиент: Надежда Разина</li>
+											<li>Тольятти, ул.Автостроителей 70</li>
+											<li>Номер договора: <span>856126</span></li>
+											<li>Стоимость: <span>35 100 р.</span></li>
+										</ul>
+										<div class="totals">
+											<span>Всего </span>
+											<div class="cena"><span>25 000 руб.</span></div>
+										</div>
+										<div class="buy">
+											<span class="arrow_left">Купить сегодня со скидкой</span>
+											<button type="button" data-toggle="modal" data-target="#callback">купить окна</button>
+										</div>
+									</div>
+								</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	 </section>
+	 <section id="reviews">
+		 <div class="container">
+			 <div class="row">
+				 <div class="col-xs-12 text-center reviews_heading">
+					 <h2>ОТЗЫВЫ НАШИХ ЗАКАЗЧИКОВ</h2>
+				 </div>				 
+			 </div>
+			 <div class="row">
+				 <div class="col-xs-12 reviews_slider">
+					 <div class="sl">
+						<div class="img_box">
+							<img src="img/reviews-photo.jpg" alt="девушка">
+						</div>
+						<div class="text_box">
+							<div class="stars">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+							</div>
+							<p>Мы с сыном давно копили, хотели поменять все окна в нашей квартире и балконную дверь. Долго выбирали компанию пока не нашли сайт производителя окон. В итоге приобрели 3 окна и балконную дверь, а на оставшиеся деньги сын поехал отдыхать в Тунис. Спасибо вам за честные цены.
+							</p>
+							<span>Анна Жихарева</span>
+							<span>г. Москва</span>
+						</div>
+					 </div>
+					 <div class="sl">
+						<div class="img_box">
+							<img src="img/reviews-photo.jpg" alt="девушка">
+						</div>
+						<div class="text_box">
+							<div class="stars">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+							</div>
+							<p>Мы с сыном давно копили, хотели поменять все окна в нашей квартире и балконную дверь. Долго выбирали компанию пока не нашли сайт производителя окон. В итоге приобрели 3 окна и балконную дверь, а на оставшиеся деньги сын поехал отдыхать в Тунис. Спасибо вам за честные цены.
+							</p>
+							<span>Анна Жихарева</span>
+							<span>г. Москва</span>
+						</div>
+					 </div>
+					 <div class="sl">
+						<div class="img_box">
+							<img src="img/reviews-photo.jpg" alt="девушка">
+						</div>
+						<div class="text_box">
+							<div class="stars">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+							</div>
+							<p>Мы с сыном давно копили, хотели поменять все окна в нашей квартире и балконную дверь. Долго выбирали компанию пока не нашли сайт производителя окон. В итоге приобрели 3 окна и балконную дверь, а на оставшиеся деньги сын поехал отдыхать в Тунис. Спасибо вам за честные цены.
+							</p>
+							<span>Анна Жихарева</span>
+							<span>г. Москва</span>
+						</div>
+					 </div>
+				 </div>
+			 </div>
+		 </div>
+	 </section>
+	 <section id="consultation">
+		 <div class="container">
+			 <div class="row">
+				 <div class="col-md-6  col-xs-12 consultation_box">
+					<div class="consultation_heading">
+						<h2>БЕСПЛАТНАЯ <span>КОНСУЛЬТАЦИЯ</span></h2>
+					</div>
+					<div class="consultation_number">
+						<a href="tel:(8482) 78-55-24">(8482) 78-55-24</a>
+						<span class="working_hours">Звоните с 8:00 до 23:00 ежедневно</span>
+					</div>
+					<div class="consultation_form">
+						<form>
+							<input class="mask_phone" type="tel" name="tel" placeholder="Ваш телефон" required>
+							<button>ЗАКАЗАТЬ ЗВОНОК</button>
+						</form>
+						<span class="arrow_up">
+							Мы перезвоним Вам через 5 минут
+						</span>
+					</div>
+				 </div>
+				 <div class="col-md-6 col-xs-12">
+					<div class="builder">
+
+					</div>
+				 </div>
+			 </div>
+		 </div>
+	 </section>
+	 <footer>
+		 <div class="container">
+			 <div class="row">
+				 <div class="col-md-6 col-xs-12">
+					 <div class="footer_number">
+						 <span>Остались вопросы? Звоните!</span>
+						 <a href="tel:(8482) 78-55-24">(8482) 78-55-24</a>
+					 </div>
+				 </div>
+				 <div class="col-md-6 col-xs-12">
+					 <div class="footer_callback">
+						 <button type="button" data-toggle="modal" data-target="#hundredthVisitor">вызвать замерщика</button>
+					 </div>
+				 </div>
+			 </div>
+		 </div>
+	 </footer>
+	 <section class="prevfooter" id="prevfooter">
+		 <div class="container">
+			 <div class="row">
+				 <div class="col-xs-12">
+					 <div class="prevfooter_date">
+						<span>Сегодня</span>
+						<span>24.11.17</span>
+					 </div>
+					 <div class="productivity">
+						<ul>
+							<li>Уровень загрузки завода <span>95%</span></li>
+							<li>Выпущено продукции, м2 <span>230</span></li>
+						</ul>
+					 </div>
+					 <div class="prevfooter_counter">
+						 <p>Осталось окон <br> по акции:</p>
+						 <img src="img/dangers.png" alt="Опасность!">
+						 <span>59</span>
+					 </div>
+					 <div class="prevfooter_order">
+						 <p>Зафиксировать <br> цену!</p>
+						 <button type="button" data-toggle="modal" data-target="#nightShare">успеть заказать</button>
+					 </div>
+				 </div>
+			 </div>
+		 </div>
+	 </section>
+	 <!-- popup -->
+	 <!-- Modal -->
+	<div class="modal fade" id="callback" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-dialog_callback" role="document">
+		  <div class="modal-content">
+			 <div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&#10006;</span></button>
+				<div class="deliveryman"></div>
+				<div class="popup_form">
+					<h2>Хотите купить окна ещё дешевле?</h2>
+					<p>Укажите Ваше имя и телефон<br>
+						и <span>получите самую низкую цену</span>
+					</p>
+					<img src="img/percent.png" alt="проценты">
+					<input type="text" name="name" class="icon_user" placeholder="Имя">
+					<input class="mask_phone icon_tel" type="tel" name="tel" class="icon_tel"  placeholder="Ваш телефон">
+					<button>хочу ещё дешевле</button>
+				</div>
+			 </div>
+		  </div>
+		</div>
+	 </div>
+	 <!-- night Share -->
+	 <div class="modal fade" id="nightShare" tabindex="-1" role="dialog" aria-labelledby="nightShareLabel">
+			<div class="modal-dialog modal-dialog_nightShare" role="document">
+			  <div class="modal-content">
+				 <div class="modal-body">
+					<button type="button" class="close share_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&#10006;</span></button>
+					<div class="col-xs-12 nightShare">
+							<div class="nightShare_box">
+								<div class="Share">
+									<span>Акция!</span>
+								</div>
+								<div class="yellow_box">
+									<h2>ночью дешевле!</h2>
+								</div>
+								<div class="prize_info">
+									<p>Примите участие в розыгрыше призов от компании “Окна с завода”</p>
+									<div class="share_time">
+										<span><sup>с</sup> 21:00</span>
+										<span><sup>до</sup> 9:00</span>
+									</div>
+									<div class="share_time_mob">
+										<span>21:00 - 9:00</span>
+									</div>
+									<div class="bitter">
+										<div class="bitter_code">11111111</div>
+										<canvas class="bitter_canvas"></canvas>
+									</div>
+									<span class="night_rally">Ночной <br> розыгрыш</span>
+									<div class="text_arrow">
+										<p>Наведите курсор в место, где нужно стирать, и двигайте, пока не увидите выигрыш!
+										</p>
+									</div>							
+								</div>
+							</div>
+						</div>
+					</div>
+				 </div>
+			  </div>
+			</div>
+		 <!-- сотый посетитель -->
+		 <div class="modal fade" id="hundredthVisitor" tabindex="-1" role="dialog" aria-labelledby="hundredthVisitorLabel">
+			<div class="modal-dialog modal-hundredthVisitor" role="document">
+			  <div class="modal-content">
+				 <div class="modal-body">
+					<button type="button" class="close hundredthVisitor_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&#10006;</span></button>
+						<div class="col-xs-12 text-center hundredthVisitor-content">
+							<div class="white-box">
+								<span class="hundredth">100</span> <span class="vsitor">Посетитель</span>
+								<p>Поздравляем! Вы стали 100-м посетителем сайта. Такое бывает только 3 раза в день!
+								</p>
+							</div>
+							<div class="discount_box">
+								<p>Запишите Ваш бонусный номер, назовите его по телефону и Вам сделают
+									<span>дополнительную скидку!</span>
+								</p>
+								<div class="barcode_discount">
+									<!-- <div class="discount_code">589742</div>
+									<canvas class="discount_canvas"></canvas> -->
+									<span>589742</span>
+								</div>
+							</div>
+							<div class="black_box">
+								<p>Боитесь забыть код?
+									Позвоните прямо сейчас!</p>
+								<a href="tel:(8482) 78-55-24">(8482) 78-55-24</a>
+							</div>
+						</div>
+					</div>
+				 </div>
+			  </div>
+			</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/less.min.js"></script>
+		<script src="slick/slick.min.js"></script>
+		<script src="js/jquery.maskedinput.js"></script>
+  </body>
+</html>
