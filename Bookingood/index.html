@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bookingood</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,800&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?u8vidh">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="logo_header">
+              <a href="#"><img src="img/main.png" alt="Logo"><span>Bookingood</span></a>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="header_menu">
+              <ul>
+                <li><a href="#">Найти работу</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li class="login"><a href="#">Войти</a></li>
+                <li><button class="btn_worksheet">Заполнить анкету</button></li>
+                <li class="employer"><a href="#">Работодателю <i class="material-icons chevron_right">chevron_right</i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="search">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="search_vacancies">
+              <form>
+                <input type="search" name="search" id="search_key" placeholder="Введите ключевые слова">
+                <select name="country" id="country">
+                  <option>Все страны</option>
+                  <option>Россия</option>
+                </select>
+                <button>Начать поиск</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="button_filtrs">
+              <a href="#" class="button_genre button_filtrs_active">Музыканты</a>
+              <div class="filtr_genre">
+                <div class="filtr_genre_form">
+                  <form>
+                    <span>Жанр</span>
+                    <select name="genre" class="genre">
+                      <option value="">Все жанры</option>
+                      <option value="">Музыканты</option>
+                    </select>
+                    <span>Поджанры</span>
+                    <select name="subgenre" class="subgenre" multiple="multiple">
+                        <option>Барабанщик</option>
+                        <option>Бас гитарист</option>
+                        <option>Контрабасист</option>
+                        <option>Гитарист</option>
+                        <option>Клавишник</option>
+                        <option>Пианист</option>
+                        <option>Саксофонист</option>
+                        <option>Трубач</option>
+                        <option>Тромбонист</option>
+                    </select>
+                  </form>
+                </div>
+                <div class="filtr_genre_footer">
+                  <div class="row">
+                    <div class="col-xs-6 reset_filtr">
+                      <a href="#">Сбросить</a>
+                    </div>
+                    <div class="col-xs-6 apply_filtr">
+                      <a href="#">Применить</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="button_filtrs">
+              <a href="#" class="button_party">Участники</a>
+              <div class="filtr_party">
+                <div class="filtr_party_form">
+                  <form>
+                    <span>Кол-во участников</span>
+                    <input type="range" name="range_part" id="range_part" multiple  min="1" max="30" data-values="1 30">
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="button_filtrs">
+              <a href="#">Оплата</a>
+              <div class="">
+                <form>
+
+                </form>
+              </div>
+            </div>
+            <div class="button_filtrs">
+              <a href="#">Даты</a>
+              <div class="">
+                <form>
+
+                </form>
+              </div>
+            </div>
+            <div class="button_filtrs">
+              <a href="#" class="button_frilance">Фриланс</a>
+              <div class="filtr_frilance">
+                <div class="filtr_frilance_text">
+                  <span>Фриланс вакансии</span>
+                  <p>Отображать только вакансии для фрилансеров</p>
+                </div>
+                <div class="filtr_frilance_form">
+                  <form>
+                    <input type="checkbox" name="frilance" id="frilance_chekbox">
+                    <label for="frilance_chekbox"></label>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="button_filtrs">
+              <a href="#">Дополнительные фильтры</a>
+              <div class="">
+                <form>
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="vacancies">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-8">
+              <div class="vacancies_caption">
+                <h4>Вакансии</h4>
+              </div>
+          </div>
+          <div class="col-md-4">
+            <div class="vacancies_pagination">
+              <button class="vacancies_pagination_arrow_left"><i class="material-icons">chevron_left</i></button>
+              <button class="vacancies_pagination_arrow_right"><i class="material-icons">chevron_right</i></button>
+              <ul>
+                <li><a class="pagination_active" href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">...</a></li>
+                <li><a href="#">88</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="vacancies_block">
+              <div class="vacancies_img">
+                <img src="img/vacancies1.png" alt="Вакансия">
+                <a href="#" class="public">
+                  <i class="material-icons public_icon">public</i>
+                  <span>FL</span>
+                </a>
+                <a href="#" class="whatshot">
+                  <i class="material-icons whatshot_icon">whatshot</i>
+                  <span>Hot</span>
+                </a>
+              </div>
+              <div class="vacancies_info">
+                <a class="bookmark_border" href="#"><i class="material-icons">bookmark_border</i></a>
+                <span class="vacancies_heading">Dance Crew (жанр)</span>
+                <span class="vacancies_payment"><i class="material-icons account_balance_wallet">account_balance_wallet</i>$1200 в месяц</span>
+                <span class="vacancies_city"><i class="material-icons place">place</i>Сеул, Корея</span>
+                <span class="vacancies_time"><i class="material-icons access_time">access_time</i>Старт 01.12.2017  · 6 мес.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="vacancies_block">
+              <div class="vacancies_img">
+                <img src="img/vacancies2.png" alt="Вакансия">
+                <a href="#" class="public">
+                  <i class="material-icons public_icon">public</i>
+                  <span>FL</span>
+                </a>
+                <a href="#" class="whatshot">
+                  <i class="material-icons whatshot_icon">whatshot</i>
+                  <span>Hot</span>
+                </a>
+              </div>
+              <div class="vacancies_info">
+                <a class="bookmark_border" href="#"><i class="material-icons">bookmark_border</i></a>
+                <span class="vacancies_heading">Dance Crew, long genre name, genre</span>
+                <span class="vacancies_payment"><i class="material-icons account_balance_wallet">account_balance_wallet</i>$1200 в месяц</span>
+                <span class="vacancies_city"><i class="material-icons place">place</i>Сеул, Корея</span>
+                <span class="vacancies_time"><i class="material-icons access_time">access_time</i>Старт 01.12.2017  · 6 мес.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="vacancies_block">
+              <div class="vacancies_img">
+                <img src="img/vacancies1.png" alt="Вакансия">
+                <a href="#" class="public">
+                  <i class="material-icons public_icon">public</i>
+                  <span>FL</span>
+                </a>
+                <a href="#" class="whatshot">
+                  <i class="material-icons whatshot_icon">whatshot</i>
+                  <span>Hot</span>
+                </a>
+              </div>
+              <div class="vacancies_info">
+                <a class="bookmark_border" href="#"><i class="material-icons">bookmark_border</i></a>
+                <span class="vacancies_heading">Dance Crew (жанр)</span>
+                <span class="vacancies_payment"><i class="material-icons account_balance_wallet">account_balance_wallet</i>$1200 в месяц</span>
+                <span class="vacancies_city"><i class="material-icons place">place</i>Сеул, Корея</span>
+                <span class="vacancies_time"><i class="material-icons access_time">access_time</i>Старт 01.12.2017  · 6 мес.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="vacancies_block">
+              <div class="vacancies_img">
+                <img src="img/vacancies2.png" alt="Вакансия">
+                <a href="#" class="public">
+                  <i class="material-icons public_icon">public</i>
+                  <span>FL</span>
+                </a>
+                <a href="#" class="whatshot">
+                  <i class="material-icons whatshot_icon">whatshot</i>
+                  <span>Hot</span>
+                </a>
+              </div>
+              <div class="vacancies_info">
+                <a class="bookmark_border" href="#"><i class="material-icons">bookmark_border</i></a>
+                <span class="vacancies_heading">Dance Crew (жанр)</span>
+                <span class="vacancies_payment"><i class="material-icons account_balance_wallet">account_balance_wallet</i>$1200 в месяц</span>
+                <span class="vacancies_city"><i class="material-icons place">place</i>Сеул, Корея</span>
+                <span class="vacancies_time"><i class="material-icons access_time">access_time</i>Старт 01.12.2017  · 6 мес.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="vacancies_block">
+              <div class="vacancies_img">
+                <img src="img/vacancies1.png" alt="Вакансия">
+                <a href="#" class="public">
+                  <i class="material-icons public_icon">public</i>
+                  <span>FL</span>
+                </a>
+                <a href="#" class="whatshot">
+                  <i class="material-icons whatshot_icon">whatshot</i>
+                  <span>Hot</span>
+                </a>
+              </div>
+              <div class="vacancies_info">
+                <a class="bookmark_border" href="#"><i class="material-icons">bookmark_border</i></a>
+                <span class="vacancies_heading">Dance Crew (жанр)</span>
+                <span class="vacancies_payment"><i class="material-icons account_balance_wallet">account_balance_wallet</i>$1200 в месяц</span>
+                <span class="vacancies_city"><i class="material-icons place">place</i>Сеул, Корея</span>
+                <span class="vacancies_time"><i class="material-icons access_time">access_time</i>Старт 01.12.2017  · 6 мес.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="vacancies_block">
+              <div class="vacancies_img">
+                <img src="img/vacancies2.png" alt="Вакансия">
+                <a href="#" class="public">
+                  <i class="material-icons public_icon">public</i>
+                  <span>FL</span>
+                </a>
+                <a href="#" class="whatshot">
+                  <i class="material-icons whatshot_icon">whatshot</i>
+                  <span>Hot</span>
+                </a>
+              </div>
+              <div class="vacancies_info">
+                <a class="bookmark_border" href="#"><i class="material-icons">bookmark_border</i></a>
+                <span class="vacancies_heading">Dance Crew (жанр)</span>
+                <span class="vacancies_payment"><i class="material-icons account_balance_wallet">account_balance_wallet</i>$1200 в месяц</span>
+                <span class="vacancies_city"><i class="material-icons place">place</i>Сеул, Корея</span>
+                <span class="vacancies_time"><i class="material-icons access_time">access_time</i>Старт 01.12.2017  · 6 мес.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="vacancies_block">
+              <div class="vacancies_img">
+                <img src="img/vacancies1.png" alt="Вакансия">
+                <a href="#" class="public">
+                  <i class="material-icons public_icon">public</i>
+                  <span>FL</span>
+                </a>
+                <a href="#" class="whatshot">
+                  <i class="material-icons whatshot_icon">whatshot</i>
+                  <span>Hot</span>
+                </a>
+              </div>
+              <div class="vacancies_info">
+                <a class="bookmark_border" href="#"><i class="material-icons">bookmark_border</i></a>
+                <span class="vacancies_heading">Dance Crew (жанр)</span>
+                <span class="vacancies_payment"><i class="material-icons account_balance_wallet">account_balance_wallet</i>$1200 в месяц</span>
+                <span class="vacancies_city"><i class="material-icons place">place</i>Сеул, Корея</span>
+                <span class="vacancies_time"><i class="material-icons access_time">access_time</i>Старт 01.12.2017  · 6 мес.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="vacancies_block">
+              <div class="vacancies_img">
+                <img src="img/vacancies2.png" alt="Вакансия">
+                <a href="#" class="public">
+                  <i class="material-icons public_icon">public</i>
+                  <span>FL</span>
+                </a>
+                <a href="#" class="whatshot">
+                  <i class="material-icons whatshot_icon">whatshot</i>
+                  <span>Hot</span>
+                </a>
+              </div>
+              <div class="vacancies_info">
+                <a class="bookmark_border" href="#"><i class="material-icons">bookmark_border</i></a>
+                <span class="vacancies_heading">Dance Crew (жанр)</span>
+                <span class="vacancies_payment"><i class="material-icons account_balance_wallet">account_balance_wallet</i>$1200 в месяц</span>
+                <span class="vacancies_city"><i class="material-icons place">place</i>Сеул, Корея</span>
+                <span class="vacancies_time"><i class="material-icons access_time">access_time</i>Старт 01.12.2017  · 6 мес.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="leading_employers">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10">
+            <div class="leading_employers_caption">
+              <h4>Ведущие работодатели</h4>
+            </div>
+          </div>
+          <div class="col-md-2">
+          <div class="leading_employers_list">
+            <a href="#">Весь список <i class="material-icons">chevron_right</i></a>
+          </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="leading_employers_slider">
+              <button class="leading_employers_arrow_left"><i class="material-icons">chevron_left</i></button>
+              <button class="leading_employers_arrow_right"><i class="material-icons">chevron_right</i></button>
+              <div class="leading_employers_slider_item"><a href="#"><img src="img/part-logo1.png" alt="1"></a></div>
+              <div class="leading_employers_slider_item"><a href="#"><img src="img/part-logo2.png" alt="2"></a></div>
+              <div class="leading_employers_slider_item"><a href="#"><img src="img/part-logo3.png" alt="3"></a></div>
+              <div class="leading_employers_slider_item"><a href="#"><img src="img/part-logo4.png" alt="4"></a></div>
+              <div class="leading_employers_slider_item"><a href="#"><img src="img/part-logo5.png" alt="5"></a></div>
+              <div class="leading_employers_slider_item"><a href="#"><img src="img/part-logo6.png" alt="6"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="vacancies vacancies_block_two">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="vacancies_block">
+              <div class="vacancies_img">
+                <img src="img/vacancies1.png" alt="Вакансия">
+                <a href="#" class="public">
+                  <i class="material-icons public_icon">public</i>
+                  <span>FL</span>
+                </a>
+                <a href="#" class="whatshot">
+                  <i class="material-icons whatshot_icon">whatshot</i>
+                  <span>Hot</span>
+                </a>
+              </div>
+              <div class="vacancies_info">
+                <a class="bookmark_border" href="#"><i class="material-icons">bookmark_border</i></a>
+                <span class="vacancies_heading">Dance Crew (жанр)</span>
+                <span class="vacancies_payment"><i class="material-icons account_balance_wallet">account_balance_wallet</i>$1200 в месяц</span>
+                <span class="vacancies_city"><i class="material-icons place">place</i>Сеул, Корея</span>
+                <span class="vacancies_time"><i class="material-icons access_time">access_time</i>Старт 01.12.2017  · 6 мес.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="vacancies_block">
+              <div class="vacancies_img">
+                <img src="img/vacancies2.png" alt="Вакансия">
+                <a href="#" class="public">
+                  <i class="material-icons public_icon">public</i>
+                  <span>FL</span>
+                </a>
+                <a href="#" class="whatshot">
+                  <i class="material-icons whatshot_icon">whatshot</i>
+                  <span>Hot</span>
+                </a>
+              </div>
+              <div class="vacancies_info">
+                <a class="bookmark_border" href="#"><i class="material-icons">bookmark_border</i></a>
+                <span class="vacancies_heading">Dance Crew, long genre name, genre</span>
+                <span class="vacancies_payment"><i class="material-icons account_balance_wallet">account_balance_wallet</i>$1200 в месяц</span>
+                <span class="vacancies_city"><i class="material-icons place">place</i>Сеул, Корея</span>
+                <span class="vacancies_time"><i class="material-icons access_time">access_time</i>Старт 01.12.2017  · 6 мес.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="vacancies_block">
+              <div class="vacancies_img">
+                <img src="img/vacancies1.png" alt="Вакансия">
+                <a href="#" class="public">
+                  <i class="material-icons public_icon">public</i>
+                  <span>FL</span>
+                </a>
+                <a href="#" class="whatshot">
+                  <i class="material-icons whatshot_icon">whatshot</i>
+                  <span>Hot</span>
+                </a>
+              </div>
+              <div class="vacancies_info">
+                <a class="bookmark_border" href="#"><i class="material-icons">bookmark_border</i></a>
+                <span class="vacancies_heading">Dance Crew (жанр)</span>
+                <span class="vacancies_payment"><i class="material-icons account_balance_wallet">account_balance_wallet</i>$1200 в месяц</span>
+                <span class="vacancies_city"><i class="material-icons place">place</i>Сеул, Корея</span>
+                <span class="vacancies_time"><i class="material-icons access_time">access_time</i>Старт 01.12.2017  · 6 мес.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="vacancies_block">
+              <div class="vacancies_img">
+                <img src="img/vacancies2.png" alt="Вакансия">
+                <a href="#" class="public">
+                  <i class="material-icons public_icon">public</i>
+                  <span>FL</span>
+                </a>
+                <a href="#" class="whatshot">
+                  <i class="material-icons whatshot_icon">whatshot</i>
+                  <span>Hot</span>
+                </a>
+              </div>
+              <div class="vacancies_info">
+                <a class="bookmark_border" href="#"><i class="material-icons">bookmark_border</i></a>
+                <span class="vacancies_heading">Dance Crew (жанр)</span>
+                <span class="vacancies_payment"><i class="material-icons account_balance_wallet">account_balance_wallet</i>$1200 в месяц</span>
+                <span class="vacancies_city"><i class="material-icons place">place</i>Сеул, Корея</span>
+                <span class="vacancies_time"><i class="material-icons access_time">access_time</i>Старт 01.12.2017  · 6 мес.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="vacancies_block">
+              <div class="vacancies_img">
+                <img src="img/vacancies1.png" alt="Вакансия">
+                <a href="#" class="public">
+                  <i class="material-icons public_icon">public</i>
+                  <span>FL</span>
+                </a>
+                <a href="#" class="whatshot">
+                  <i class="material-icons whatshot_icon">whatshot</i>
+                  <span>Hot</span>
+                </a>
+              </div>
+              <div class="vacancies_info">
+                <a class="bookmark_border" href="#"><i class="material-icons">bookmark_border</i></a>
+                <span class="vacancies_heading">Dance Crew (жанр)</span>
+                <span class="vacancies_payment"><i class="material-icons account_balance_wallet">account_balance_wallet</i>$1200 в месяц</span>
+                <span class="vacancies_city"><i class="material-icons place">place</i>Сеул, Корея</span>
+                <span class="vacancies_time"><i class="material-icons access_time">access_time</i>Старт 01.12.2017  · 6 мес.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="vacancies_block">
+              <div class="vacancies_img">
+                <img src="img/vacancies2.png" alt="Вакансия">
+                <a href="#" class="public">
+                  <i class="material-icons public_icon">public</i>
+                  <span>FL</span>
+                </a>
+                <a href="#" class="whatshot">
+                  <i class="material-icons whatshot_icon">whatshot</i>
+                  <span>Hot</span>
+                </a>
+              </div>
+              <div class="vacancies_info">
+                <a class="bookmark_border" href="#"><i class="material-icons">bookmark_border</i></a>
+                <span class="vacancies_heading">Dance Crew (жанр)</span>
+                <span class="vacancies_payment"><i class="material-icons account_balance_wallet">account_balance_wallet</i>$1200 в месяц</span>
+                <span class="vacancies_city"><i class="material-icons place">place</i>Сеул, Корея</span>
+                <span class="vacancies_time"><i class="material-icons access_time">access_time</i>Старт 01.12.2017  · 6 мес.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="vacancies_block">
+              <div class="vacancies_img">
+                <img src="img/vacancies1.png" alt="Вакансия">
+                <a href="#" class="public">
+                  <i class="material-icons public_icon">public</i>
+                  <span>FL</span>
+                </a>
+                <a href="#" class="whatshot">
+                  <i class="material-icons whatshot_icon">whatshot</i>
+                  <span>Hot</span>
+                </a>
+              </div>
+              <div class="vacancies_info">
+                <a class="bookmark_border" href="#"><i class="material-icons">bookmark_border</i></a>
+                <span class="vacancies_heading">Dance Crew (жанр)</span>
+                <span class="vacancies_payment"><i class="material-icons account_balance_wallet">account_balance_wallet</i>$1200 в месяц</span>
+                <span class="vacancies_city"><i class="material-icons place">place</i>Сеул, Корея</span>
+                <span class="vacancies_time"><i class="material-icons access_time">access_time</i>Старт 01.12.2017  · 6 мес.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="vacancies_block">
+              <div class="vacancies_img">
+                <img src="img/vacancies2.png" alt="Вакансия">
+                <a href="#" class="public">
+                  <i class="material-icons public_icon">public</i>
+                  <span>FL</span>
+                </a>
+                <a href="#" class="whatshot">
+                  <i class="material-icons whatshot_icon">whatshot</i>
+                  <span>Hot</span>
+                </a>
+              </div>
+              <div class="vacancies_info">
+                <a class="bookmark_border" href="#"><i class="material-icons">bookmark_border</i></a>
+                <span class="vacancies_heading">Dance Crew (жанр)</span>
+                <span class="vacancies_payment"><i class="material-icons account_balance_wallet">account_balance_wallet</i>$1200 в месяц</span>
+                <span class="vacancies_city"><i class="material-icons place">place</i>Сеул, Корея</span>
+                <span class="vacancies_time"><i class="material-icons access_time">access_time</i>Старт 01.12.2017  · 6 мес.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="vacancies_block">
+              <div class="vacancies_img">
+                <img src="img/vacancies1.png" alt="Вакансия">
+                <a href="#" class="public">
+                  <i class="material-icons public_icon">public</i>
+                  <span>FL</span>
+                </a>
+                <a href="#" class="whatshot">
+                  <i class="material-icons whatshot_icon">whatshot</i>
+                  <span>Hot</span>
+                </a>
+              </div>
+              <div class="vacancies_info">
+                <a class="bookmark_border" href="#"><i class="material-icons">bookmark_border</i></a>
+                <span class="vacancies_heading">Dance Crew (жанр)</span>
+                <span class="vacancies_payment"><i class="material-icons account_balance_wallet">account_balance_wallet</i>$1200 в месяц</span>
+                <span class="vacancies_city"><i class="material-icons place">place</i>Сеул, Корея</span>
+                <span class="vacancies_time"><i class="material-icons access_time">access_time</i>Старт 01.12.2017  · 6 мес.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="vacancies_block">
+              <div class="vacancies_img">
+                <img src="img/vacancies2.png" alt="Вакансия">
+                <a href="#" class="public">
+                  <i class="material-icons public_icon">public</i>
+                  <span>FL</span>
+                </a>
+                <a href="#" class="whatshot">
+                  <i class="material-icons whatshot_icon">whatshot</i>
+                  <span>Hot</span>
+                </a>
+              </div>
+              <div class="vacancies_info">
+                <a class="bookmark_border" href="#"><i class="material-icons">bookmark_border</i></a>
+                <span class="vacancies_heading">Dance Crew, long genre name, genre</span>
+                <span class="vacancies_payment"><i class="material-icons account_balance_wallet">account_balance_wallet</i>$1200 в месяц</span>
+                <span class="vacancies_city"><i class="material-icons place">place</i>Сеул, Корея</span>
+                <span class="vacancies_time"><i class="material-icons access_time">access_time</i>Старт 01.12.2017  · 6 мес.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="vacancies_block">
+              <div class="vacancies_img">
+                <img src="img/vacancies1.png" alt="Вакансия">
+                <a href="#" class="public">
+                  <i class="material-icons public_icon">public</i>
+                  <span>FL</span>
+                </a>
+                <a href="#" class="whatshot">
+                  <i class="material-icons whatshot_icon">whatshot</i>
+                  <span>Hot</span>
+                </a>
+              </div>
+              <div class="vacancies_info">
+                <a class="bookmark_border" href="#"><i class="material-icons">bookmark_border</i></a>
+                <span class="vacancies_heading">Dance Crew (жанр)</span>
+                <span class="vacancies_payment"><i class="material-icons account_balance_wallet">account_balance_wallet</i>$1200 в месяц</span>
+                <span class="vacancies_city"><i class="material-icons place">place</i>Сеул, Корея</span>
+                <span class="vacancies_time"><i class="material-icons access_time">access_time</i>Старт 01.12.2017  · 6 мес.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="vacancies_block">
+              <div class="vacancies_img">
+                <img src="img/vacancies2.png" alt="Вакансия">
+                <a href="#" class="public">
+                  <i class="material-icons public_icon">public</i>
+                  <span>FL</span>
+                </a>
+                <a href="#" class="whatshot">
+                  <i class="material-icons whatshot_icon">whatshot</i>
+                  <span>Hot</span>
+                </a>
+              </div>
+              <div class="vacancies_info">
+                <a class="bookmark_border" href="#"><i class="material-icons">bookmark_border</i></a>
+                <span class="vacancies_heading">Dance Crew (жанр)</span>
+                <span class="vacancies_payment"><i class="material-icons account_balance_wallet">account_balance_wallet</i>$1200 в месяц</span>
+                <span class="vacancies_city"><i class="material-icons place">place</i>Сеул, Корея</span>
+                <span class="vacancies_time"><i class="material-icons access_time">access_time</i>Старт 01.12.2017  · 6 мес.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="vacancies_block">
+              <div class="vacancies_img">
+                <img src="img/vacancies1.png" alt="Вакансия">
+                <a href="#" class="public">
+                  <i class="material-icons public_icon">public</i>
+                  <span>FL</span>
+                </a>
+                <a href="#" class="whatshot">
+                  <i class="material-icons whatshot_icon">whatshot</i>
+                  <span>Hot</span>
+                </a>
+              </div>
+              <div class="vacancies_info">
+                <a class="bookmark_border" href="#"><i class="material-icons">bookmark_border</i></a>
+                <span class="vacancies_heading">Dance Crew (жанр)</span>
+                <span class="vacancies_payment"><i class="material-icons account_balance_wallet">account_balance_wallet</i>$1200 в месяц</span>
+                <span class="vacancies_city"><i class="material-icons place">place</i>Сеул, Корея</span>
+                <span class="vacancies_time"><i class="material-icons access_time">access_time</i>Старт 01.12.2017  · 6 мес.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="vacancies_block">
+              <div class="vacancies_img">
+                <img src="img/vacancies2.png" alt="Вакансия">
+                <a href="#" class="public">
+                  <i class="material-icons public_icon">public</i>
+                  <span>FL</span>
+                </a>
+                <a href="#" class="whatshot">
+                  <i class="material-icons whatshot_icon">whatshot</i>
+                  <span>Hot</span>
+                </a>
+              </div>
+              <div class="vacancies_info">
+                <a class="bookmark_border" href="#"><i class="material-icons">bookmark_border</i></a>
+                <span class="vacancies_heading">Dance Crew (жанр)</span>
+                <span class="vacancies_payment"><i class="material-icons account_balance_wallet">account_balance_wallet</i>$1200 в месяц</span>
+                <span class="vacancies_city"><i class="material-icons place">place</i>Сеул, Корея</span>
+                <span class="vacancies_time"><i class="material-icons access_time">access_time</i>Старт 01.12.2017  · 6 мес.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="vacancies_block">
+              <div class="vacancies_img">
+                <img src="img/vacancies1.png" alt="Вакансия">
+                <a href="#" class="public">
+                  <i class="material-icons public_icon">public</i>
+                  <span>FL</span>
+                </a>
+                <a href="#" class="whatshot">
+                  <i class="material-icons whatshot_icon">whatshot</i>
+                  <span>Hot</span>
+                </a>
+              </div>
+              <div class="vacancies_info">
+                <a class="bookmark_border" href="#"><i class="material-icons">bookmark_border</i></a>
+                <span class="vacancies_heading">Dance Crew (жанр)</span>
+                <span class="vacancies_payment"><i class="material-icons account_balance_wallet">account_balance_wallet</i>$1200 в месяц</span>
+                <span class="vacancies_city"><i class="material-icons place">place</i>Сеул, Корея</span>
+                <span class="vacancies_time"><i class="material-icons access_time">access_time</i>Старт 01.12.2017  · 6 мес.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="vacancies_block">
+              <div class="vacancies_img">
+                <img src="img/vacancies2.png" alt="Вакансия">
+                <a href="#" class="public">
+                  <i class="material-icons public_icon">public</i>
+                  <span>FL</span>
+                </a>
+                <a href="#" class="whatshot">
+                  <i class="material-icons whatshot_icon">whatshot</i>
+                  <span>Hot</span>
+                </a>
+              </div>
+              <div class="vacancies_info">
+                <a class="bookmark_border" href="#"><i class="material-icons">bookmark_border</i></a>
+                <span class="vacancies_heading">Dance Crew (жанр)</span>
+                <span class="vacancies_payment"><i class="material-icons account_balance_wallet">account_balance_wallet</i>$1200 в месяц</span>
+                <span class="vacancies_city"><i class="material-icons place">place</i>Сеул, Корея</span>
+                <span class="vacancies_time"><i class="material-icons access_time">access_time</i>Старт 01.12.2017  · 6 мес.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-md-offset-8">
+            <div class="vacancies_pagination">
+              <button class="vacancies_pagination_arrow_left"><i class="material-icons">chevron_left</i></button>
+              <button class="vacancies_pagination_arrow_right"><i class="material-icons">chevron_right</i></button>
+              <ul>
+                <li><a class="pagination_active" href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">...</a></li>
+                <li><a href="#">88</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="subscription">
+              <form>
+                <input type="email" name="subscription" placeholder="Email адрес" required>
+                <button>Подписаться</button>
+                <p>Подписывайтесь на нашу рассылку и будьте в курсе свежих новостей и обновлений серсиса</p>
+              </form>
+              <div class="footer_social_icon">
+                <ul>
+                  <li class="fb"><a href="#" class="socicon-facebook"></a></li>
+                  <li class="vk"><a href="#" class="socicon-vkontakte"></a></li>
+                  <li class="wch"><a href="#" class="socicon-wechat"></a></li>
+                  <li class="inst"><a href="#" class="socicon-instagram"></a></li>
+                  <li class="yt"><a href="#" class="socicon-youtube"></a></li>
+                  <li class="empty"><a href="#" class="socicon-youtube"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="footer_nav">
+              <span>Bookingood</span>
+              <ul>
+                <li><a href="#">О сервисе</a></li>
+                <li><a href="#">Контактная информация</a></li>
+                <li><a href="#">Сотрудничество</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="footer_nav">
+              <span>Артистам</span>
+              <ul>
+                <li><a href="#">Найти работу</a></li>
+                <li><a href="#">Заполнить анкету</a></li>
+                <li><a href="#">Рассылка вакансий</a></li>
+                <li><a href="#">Блог</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="footer_nav">
+              <span>Работодателю</span>
+              <ul>
+                <li><a href="#">Добавить вакансию</a></li>
+                <li><a href="#">Поиск резюме</a></li>
+                <li><a href="#">Рассылка вакансий</a></li>
+                <li><a href="#">Платные услуги</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row footer_border_top">
+          <div class="col-md-8">
+            <div class="copyrighted">
+              <img src="img/logo-footer.png" alt="Bookingood">
+              <p>© Bookingood 2017 · Пользовательское соглашение · Политика конфиденциальности</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer_lang">
+              <form>
+                <select name="lang" id="lang">
+                  <option>Русский</option>
+                  <option>Английский</option>
+                  <option>Китайский</option>
+                </select>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

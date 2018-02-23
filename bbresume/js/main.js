@@ -9,6 +9,12 @@ $(document).ready(function(){
       $('.btn_hover').css('display', 'none');
     });
 
+    $(".popupimg").magnificPopup ({
+      type : 'image' ,
+      gallery : {
+        enabled : true
+      }
+    });
 
     $('.sample_resume_slider').slick({
         dots: true,
