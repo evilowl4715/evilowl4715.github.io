@@ -1,0 +1,227 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 976px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.questionnaire {
+  &__title {
+    margin-bottom: 40px;
+    margin-top: 50px;
+    h3 {
+      font-size: 24px;
+      font-weight: 700;
+    }
+  }
+  &__input-group {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    width: 100%;
+  }
+  &__input {
+    width: 100%;
+    max-width: 459px;
+    position: relative;
+    button {
+      width: 28px;
+      height: 28px;
+      border: none;
+      outline: none;
+      text-align: center;
+      line-height: 28px;
+      background: #d4d4d4;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-right: 20px;
+    }
+  }
+
+  input {
+    margin-top: 17px;
+    display: block;
+    width: 100%;
+    height: 41px;
+    border: 1px solid #d7d7d7;
+    color: #616161;
+    padding-left: 20px;
+    font-size: 16px;
+    box-sizing: border-box;
+    &::-webkit-input-placeholder {
+      color: #616161;
+      font-size: 16px;
+    }
+  }
+  select {
+    border: 1px solid #d7d7d7;
+    width: 100%;
+    height: 41px;
+    background-image: url(appearance.png);
+    background-position: 97% center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    border-radius: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding-left: 20px;
+    color: #616161;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 17px;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="radio"] {
+    margin-top: 0;
+    display: none;
+  }
+  input[type="radio"]:checked +.radio-item {
+    img {
+      opacity: 1;
+    }
+  }
+  .radio-item {
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius: 50%;
+    width: 32px;
+    height: 31px;
+    border: 1px solid #dddddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      opacity: 0;
+    }
+  }
+  label {
+    display: inline-block;
+  }
+  .full-input {
+    max-width: 100%;
+    .questionnaire__input-group {
+      margin-top: 0;
+    }
+  }
+  .biba {
+    margin-top: 20px;
+  }
+  .fio {
+    width: 100%;
+    max-width: 335px;
+  }
+  .relation-degree {
+    width: 1005px;
+    max-width: 290px;
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  input[type="checkbox"]:checked + .checked-item {
+    border-color: #009fe3;
+    img {
+      opacity: 1;
+    }
+  }
+  li {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .checked-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13px;
+    height: 13px;
+    border: 2px solid #b8b8b8;
+    margin-right: 20px;
+    cursor: pointer;
+    img {
+      opacity: 0;
+      position: relative;
+      left: 4px;
+      top: -2px;
+    }
+  }
+  .index {
+    width: 94px;
+  }
+  .region {
+    width: 100%;
+    max-width: 309px;
+  }
+  .city {
+    width: 100%;
+    max-width: 460px;
+  }
+  .area {
+    width: 202px;
+  }
+  .house {
+    width: 76px
+  }
+  .main-employment {
+    width: 100%;
+    max-width: 700px;
+    align-items: center;
+    .questionnaire__input {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .submit {
+    width: 100%;
+    max-width: 270px;
+    height: 49px;
+    border: none;
+    margin: 50px auto;
+    background: #2396ca;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    cursor: pointer;
+  }
+  .location {
+    display: none;
+  }
+  .credit {
+    label {
+      margin-right: 20px;
+      .checked-item {
+        margin: 0;
+      }
+    }
+  }
+}
+.not-active {
+  display: none;
+}

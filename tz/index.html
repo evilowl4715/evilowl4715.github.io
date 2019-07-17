@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <title>Анкета</title>
+</head>
+<body>
+  <div class="questionnaire">
+    <div class="container">
+      <div class="questionnaire__form">
+        <div class="questionnaire__title">
+          <h3>Заполните анкету</h3>
+        </div>
+        <form action="">
+          <div class="questionnaire__input-group">
+            <div class="questionnaire__input">
+              <label>ФИО</label>
+              <input type="text" name="fio" placeholder="Фамилия Имя Отчество">
+            </div>
+            <div class="questionnaire__input">
+              <label>E-mail</label>
+              <input type="email" name="email" placeholder="e-mail">
+            </div>
+          </div>
+          <div class="questionnaire__input-group">
+            <div class="questionnaire__input">
+              <label>Укажите мобильный телефон</label>
+              <input type="tel" name="mob_phone" placeholder="(123) 4567890">
+            </div>
+            <div class="questionnaire__input">
+              <label>Укажите стационарный телефон</label>
+              <input type="tel" name="home_phone" placeholder="(123) 4567890">
+            </div>
+          </div>
+          <div class="questionnaire__input-group">
+            <div class="questionnaire__input">
+              <label>Семейное положение</label>
+              <select name="family_status" id="familyStatus">
+                <option value="alone">Холост</option>
+                <option value="married">В браке</option>
+              </select>
+            </div>
+            <div class="questionnaire__input">
+              <label>Есть ли у Вас несовершенолетние дети</label>
+              <div class="questionnaire__input-group">
+                <div class="questionnaire__input">
+                  <label>Да</label>
+                  <label>
+                    <input type="radio" name="children" value="yes" checked>
+                    <span class="radio-item">
+                    <img src="radio-cheked.png" alt="">
+                  </span>
+                  </label>
+                </div>
+                <div class="questionnaire__input">
+                  <label>Нет</label>
+                  <label>
+                    <input type="radio" name="children" value="no">
+                    <span class="radio-item">
+                    <img src="radio-cheked.png" alt="">
+                  </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="questionnaire__input-group">
+            <div class="questionnaire__input full-input">
+              <label>Укажите двух ближайших родственников</label>
+              <div class="questionnaire__input-group">
+                <div class="questionnaire__input fio">
+                  <input type="text" name="relative_fio" placeholder="ФИО">
+                  <input type="text" name="relative_fio" placeholder="ФИО">
+                </div>
+                <div class="questionnaire__input relation-degree">
+                  <input type="text" name="relation_degree" placeholder="Степень родства">
+                  <input type="text" name="relation_degree" placeholder="Степень родства">
+                </div>
+                <div class="questionnaire__input relation-degree">
+                  <input type="tel" name="mob_phone" placeholder="(123) 4567890">
+                  <input type="tel" name="home_phone" placeholder="(123) 4567890">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="questionnaire__title">
+            <h3>Адрес фактического места проживания</h3>
+          </div>
+          <div class="questionnaire__input-group">
+            <div class="questionnaire__input">
+              <label>Совпадает с местом регистрации</label>
+              <label>
+                <input type="checkbox"checked id="checkboxLocation">
+                <span class="checked-item">
+                  <img src="check.png" alt="">
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="location">
+            <div class="questionnaire__input-group">
+              <div class="questionnaire__input index">
+                <label>Индекс</label>
+                <input type="text" name="index" placeholder="191023">
+              </div>
+              <div class="questionnaire__input region">
+                <label>Область</label>
+                <input type="text" name="region" placeholder="Ленинградская">
+              </div>
+              <div class="questionnaire__input city">
+                <label>Город</label>
+                <input type="text" name="region" placeholder="Санкт-Петербург">
+              </div>
+            </div>
+            <div class="questionnaire__input-group">
+              <div class="questionnaire__input area">
+                <label>Район</label>
+                <input type="text" name="area" placeholder="Адмиралтейский">
+              </div>
+              <div class="questionnaire__input area">
+                <label>Улица</label>
+                <input type="text" name="street" placeholder="Ефимова">
+              </div>
+              <div class="questionnaire__input house">
+                <label>Дом</label>
+                <input type="text" name="house" placeholder="3">
+              </div>
+              <div class="questionnaire__input house">
+                <label>Корпус</label>
+                <input type="text" name="housing" placeholder="1">
+              </div>
+              <div class="questionnaire__input house">
+                <label>Квартира</label>
+                <input type="text" name="apartment" placeholder="406">
+              </div>
+            </div>
+          </div>
+          <div class="questionnaire__input-group">
+            <div class="questionnaire__input">
+              <label>Длительность проживания в регионе <br> по фактическому адресу</label>
+              <input type="text" name="mob_phone" placeholder="5 лет">
+            </div>
+            <div class="questionnaire__input">
+              <label class="biba">Право проживания</label>
+              <select name="residence" id="residence">
+                <option value="alone">Социальный наем</option>
+              </select>
+            </div>
+          </div>
+          <div class="questionnaire__title">
+            <h3>Укажите тип вашей основной трудовой занятости</h3>
+          </div>
+          <div class="questionnaire__input-group main-employment">
+            <div class="questionnaire__input">
+              <label>По найму</label>
+              <label>
+                <input id="hiring" type="radio" name="employment_type" value="hiring" checked="checked">
+                <span class="radio-item">
+                    <img src="radio-cheked.png" alt="">
+                  </span>
+              </label>
+            </div>
+            <div class="questionnaire__input">
+              <label>ИП</label>
+              <label>
+                <input id="individual" type="radio" name="employment_type" value="individual">
+                <span class="radio-item">
+                    <img src="radio-cheked.png" alt="">
+                  </span>
+              </label>
+            </div>
+            <div class="questionnaire__input">
+              <label>Собственник бизнеса</label>
+              <label>
+                <input type="radio" name="employment_type" value="owner">
+                <span class="radio-item">
+                    <img src="radio-cheked.png" alt="">
+                  </span>
+              </label>
+            </div>
+          </div>
+          <div class="questionnaire__input-group">
+            <div class="questionnaire__input credit hiring-item">
+              <label>Не могу документально подтвердить занятость</label>
+              <label>
+                <input type="checkbox"checked>
+                <span class="checked-item">
+                      <img src="check.png" alt="">
+                    </span>
+              </label>
+            </div>
+            <div class="questionnaire__input credit individual-owner-item">
+              <label>Опишите сферу занятости</label>
+              <input type="text" placeholder="Опишите сферу занятости">
+            </div>
+            <div class="questionnaire__input individual-owner-item">
+              <label>Официальный телефон компании</label>
+              <input type="tel" name="home_phone" placeholder="(123) 4567890">
+            </div>
+          </div>
+          <div class="questionnaire__input-group">
+            <div class="questionnaire__input">
+              <label>Укажите кол-во сотрудников в компании</label>
+              <input type="number" placeholder="10" min="0">
+            </div>
+            <div class="questionnaire__input hiring-item">
+              <label>ФИО руководителя</label>
+              <input type="text" placeholder="Фамилия Имя Отчество">
+            </div>
+            <div class="questionnaire__input owner-item">
+              <label>Доля в бизнесе</label>
+              <input type="number" placeholder="10" min="0">
+            </div>
+          </div>
+          <div class="questionnaire__input-group">
+            <div class="questionnaire__input hiring-owner-item">
+              <button>+</button>
+              <label>Дополнительное место работы</label>
+            </div>
+            <div class="questionnaire__input">
+              <label>Сайт компании</label>
+              <input type="text" placeholder="https://">
+            </div>
+          </div>
+          <div class="questionnaire__input-group">
+            <div class="questionnaire__input">
+              <label>Укажите имеющиеся активы</label>
+              <div class="questionnaire__input-group">
+                <ul>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="assets" value="Автомобиль" checked>
+                      <span class="checked-item">
+                            <img src="check.png" alt="">
+                          </span>
+                    </label>
+                    Автомобиль
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="assets" value="Квартира" checked>
+                      <span class="checked-item">
+                            <img src="check.png" alt="">
+                          </span>
+                    </label>
+                    Квартира
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="assets" value="Дом" checked>
+                      <span class="checked-item">
+                            <img src="check.png" alt="">
+                          </span>
+                    </label>
+                    Дом
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="assets" value="Земельный участок">
+                      <span class="checked-item">
+                            <img src="check.png" alt="">
+                          </span>
+                    </label>
+                    Земельный участок
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="assets" value="Вклады">
+                      <span class="checked-item">
+                            <img src="check.png" alt="">
+                          </span>
+                    </label>
+                    Вклады
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="assets" value="Коммерческая недвижимость">
+                      <span class="checked-item">
+                            <img src="check.png" alt="">
+                          </span>
+                    </label>
+                    Коммерческая недвижимость
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="questionnaire__input-group">
+            <div class="questionnaire__input credit">
+              <label>У меня есть действующие кредиты</label>
+              <label>
+                <input type="checkbox"checked>
+                <span class="checked-item">
+                            <img src="check.png" alt="">
+                          </span>
+              </label>
+            </div>
+          </div>
+          <div class="questionnaire__input-group">
+            <div class="questionnaire__input">
+              <label>Применялась ли к Вам процедура банкротства?</label>
+              <div class="questionnaire__input-group">
+                <div class="questionnaire__input">
+                  <label>Нет</label>
+                  <label>
+                    <input type="radio"name="bankruptcy" value="no" checked>
+                    <span class="radio-item">
+                        <img src="radio-cheked.png" alt="">
+                      </span>
+                  </label>
+                </div>
+                <div class="questionnaire__input">
+                  <label>Да</label>
+                  <label>
+                    <input type="radio"name="bankruptcy" value="yes">
+                    <span class="radio-item">
+                        <img src="radio-cheked.png" alt="">
+                      </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="questionnaire__input">
+              <label>Опишите ваши дополнительные доходы при их наличии
+                <input type="text" placeholder="Не имеется">
+            </div>
+          </div>
+          <button class="submit" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
