@@ -18,7 +18,8 @@ body {
   font-size: 16px;
   overflow-x: hidden;
 }
-.slick-slide {
+.slick-initialized .slick-slide {
+  display: block;
   outline: none;
 }
 .container {
