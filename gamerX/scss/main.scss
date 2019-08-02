@@ -18,7 +18,9 @@ body {
   font-size: 16px;
   overflow-x: hidden;
 }
-
+.slick-slide {
+  outline: none;
+}
 .container {
   width: 100%;
   max-width: 1200px;
