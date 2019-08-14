@@ -1201,8 +1201,9 @@ button {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 0;
-  width: 219px;
-  height: 54px;
+  width: 100%;
+  max-width: 292px;
+  height: 53px;
   border: 1px solid #e13b31;
   color: #e13b31;
   font-size: 14px;
@@ -1212,7 +1213,6 @@ button {
   transition: all 0.5s;
   background: #fff;
   margin-top: 10px;
-  margin-left: 21%;
   border-radius: 25px;
 }
 .contacts__form button:hover {
@@ -1557,6 +1557,25 @@ button {
 .scroll-menu ul li a:hover {
   opacity: 0.5;
 }
+.scroll-menu .header {
+  padding: 10px 0;
+}
+.scroll-menu .header__logo p {
+  font-size: 16px;
+}
+.scroll-menu .header__logo a img {
+  width: 100px;
+}
+.scroll-menu .header__phone a {
+  font-size: 20px;
+}
+.scroll-menu .header__phone a:last-child {
+  font-size: 16px;
+}
+.scroll-menu .header__phone .callback {
+  width: 180px;
+  height: 40px;
+}
 
 .lb-outerContainer {
   border: none;
@@ -1601,6 +1620,17 @@ button {
 @media (max-width: 1180px) {
   .catalog__item {
     margin-right: 45px;
+  }
+}
+@media (max-width: 1179px) {
+  .advantages__item:nth-child(3) span {
+    bottom: auto;
+    top: -50px;
+  }
+
+  .advantages__item:nth-child(4) span {
+    bottom: auto;
+    top: -40px;
   }
 }
 @media (max-width: 1160px) {
@@ -1933,6 +1963,14 @@ button {
   }
 }
 @media (max-width: 619px) {
+  .scroll-menu .header {
+    display: none;
+  }
+
+  .mob__menu {
+    margin-top: 0;
+  }
+
   .header__logo {
     -webkit-box-align: center;
         -ms-flex-align: center;

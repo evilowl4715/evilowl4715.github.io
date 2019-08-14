@@ -12,10 +12,6 @@ $(document).ready(function(){
   $('.close-btn').click(function () {
     $('.popup-request').css('display', 'none');
   });
-  $('.popup-request input[submit]').click(function () {
-    $('.popup-request').css('display', 'none');
-    $('.ok').css('display', 'flex');
-  });
   $('.close').click(function () {
     $('.popup').css('display', 'none')
   });
