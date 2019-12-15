@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>Калькулятор расчёта выигрыша</title>
+</head>
+<body>
+<div class="wrapper">
+  <div class="container">
+    <header class="header"></header>
+    <div class="wrap">
+      <div class="inner">
+        <div class="title">
+          <h1>Калькулятор расчёта выигрыша</h1>
+          <div class="block win-amount">
+              <div class="title">
+                <h2>Сколько можно выиграть?</h2>
+                <form class="win-amount__form">
+                  <div class="win-amount__input">
+                    <label>Если поставить, руб.</label>
+                    <input type="number" name="money" placeholder="от 10 и больше">
+                  </div>
+                  <div class="win-amount__input">
+                    <label>На коэффицент</label>
+                    <input type="number" name="coefficient" placeholder="от 1 и больше">
+                  </div>
+                  <div class="win-amount__input hidden">
+                    <label>Выплата</label>
+                    <input type="text" name="pay" readonly="readonly" class="input">
+                  </div>
+                  <div class="win-amount__input hidden">
+                    <label>Сумма выигрыша</label>
+                    <input type="text" name="amount" readonly="readonly" class="amount">
+                  </div>
+                  <div class="win-amount__input">
+                    <label></label>
+                    <button class="calculate btn" type="button" disabled>Рассчитать</button>
+                  </div>
+                </form>
+                <div class="win-amount__desc">
+                  <ul>
+                    <li>Lorem Ipsum is simply dummy text of the printing  and typesetting industry.</li>
+                    <li>Lorem Ipsum is simply dummy text of the printing  and typesetting industry.</li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+          <div class="block offices"></div>
+        </div>
+      </div>
+      <aside class="aside"></aside>
+    </div>
+  </div>
+  <div class="sidebar"></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
