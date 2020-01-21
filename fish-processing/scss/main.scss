@@ -98,7 +98,7 @@ button {
   }
   &__title {
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     h1 {
       font-size: 60px;
       font-family: "GothaProBol", sans-serif;
@@ -106,6 +106,17 @@ button {
     p {
       font-size: 22px;
       margin-top: 20px;
+      padding-left: 60px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      &:before {
+        content: "\f006";
+        font-family: 'FontAwesome';
+        font-size: 50px;
+        position: absolute;
+        left: 0;
+      }
     }
   }
   &__form {
@@ -165,6 +176,16 @@ button {
 }
 .info-block {
   padding-top: 40px;
+  &__desc {
+    margin-bottom: 40px;
+    p {
+      color: #1654c0;
+      text-align: center;
+      width: 100%;
+      font-size: 20px;
+      font-family: "GothaProBol", sans-serif;
+    }
+  }
   &__title {
     width: 100%;
     max-width: 500px;
@@ -198,7 +219,7 @@ button {
     width: 144px;
   }
   &__item-text {
-    padding: 20px;
+    padding: 15px;
     strong {
       font-family: "GothaProBol", sans-serif;
       line-height: 1.813;
@@ -207,6 +228,12 @@ button {
       li {
         color: #969696;
         line-height: 1.813;
+        position: relative;
+        font-size: 16px;
+        &:before {
+          content: '+';
+          margin-right: 5px;
+        }
       }
     }
     a {
@@ -215,6 +242,15 @@ button {
       display: block;
       width: 215px;
       margin-top: 10px;
+      font-size: 16px;
+      position: relative;
+      margin-left: 16px;
+      &:before {
+        content: '+';
+        margin-right: 5px;
+        left: -16px;
+        position: absolute;
+      }
     }
   }
 }
@@ -365,20 +401,18 @@ button {
   }
 }
 .question {
+  margin-top: 50px;
   &__wrap {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 40px;
     background-image: url(../images/question-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
   &__title {
     width: 100%;
-    max-width: 330px;
-    margin: 0 auto;
+    max-width: 312px;
     h2 {
       font-size: 22px;
       font-family: "GothaProBol", sans-serif;
@@ -388,9 +422,17 @@ button {
   }
   &__form {
     width: 100%;
-    max-width: 315px;
     form {
       width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      input {
+        width: 100%;
+        max-width: 280px;
+        height: 65px;
+        margin-right: 10px;
+      }
+
     }
     p {
       margin-top: 10px;
@@ -412,8 +454,17 @@ button {
     }
   }
 }
+.question2 {
+  .question__title {
+    max-width: 440px;
+  }
+}
 .advantages {
   padding-top: 40px;
+  .info-block__desc {
+    margin-bottom: 0;
+    margin-top: 40px;
+  }
   &__title {
     h2 {
       font-size: 30px;
@@ -456,6 +507,19 @@ button {
 }
 .reviews {
   padding-top: 40px;
+  .info-block__desc {
+    margin-bottom: 50px;
+    margin-top: 40px;
+    p {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      i {
+        margin-right: 10px;
+        text-align: center;
+      }
+    }
+  }
   &__title {
     h2 {
       font-size: 30px;
@@ -623,13 +687,18 @@ button {
     margin-left: 0;
   }
 }
-@media (max-width: 870px) {
+@media (max-width: 872px) {
   .advantages__list {
     flex-direction: column;
     align-items: center;
   }
   .advantages__item {
-    margin-left: 0;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .advantages__item:first-child {
+    margin: 0 auto;
+    margin-top: 20px;
   }
   .reviews__list {
     flex-direction: column;
@@ -641,8 +710,9 @@ button {
     margin: 0 auto;
     margin-top: 20px;
   }
-  .reviews__item {
-    margin-right: 0;
+  .reviews__item:nth-child(even) {
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 850px) {
@@ -655,6 +725,10 @@ button {
     margin-bottom: 30px;
     p {
       text-align: center;
+      margin: 0 auto;
+      margin-top: 20px;
+      width: 100%;
+      max-width: 400px;
     }
   }
   .banner__title h1 {
@@ -701,5 +775,18 @@ button {
   }
   .banner__title h1 {
     font-size: 30px;
+  }
+}
+@media (max-width: 415px) {
+  .banner__title p {
+    align-items: flex-start;
+    padding-left: 0;
+  }
+  .banner__title p br {
+    display: none;
+  }
+  .banner__title p:before {
+    position: relative;
+    font-size: 35px;
   }
 }

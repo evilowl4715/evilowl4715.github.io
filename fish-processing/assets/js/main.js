@@ -7,6 +7,24 @@ $(document).ready(function(){
   });
   $('.phone').mask('+7 (999) 999-9999');
 
+  $('.snacks-open').click(function () {
+    $('.snacks').css('display', 'flex');
+  });
+  $('.drying-open').click(function () {
+    $('.drying').css('display', 'flex');
+  });
+  $('.smoking-open').click(function () {
+    $('.smoking').css('display', 'flex');
+  });
+  $('.pickles-open').click(function () {
+    $('.pickles').css('display', 'flex');
+  });
+  $('.preserve-open').click(function () {
+    $('.preserve').css('display', 'flex');
+  });
+  $('.semifinished-open').click(function () {
+    $('.semifinished').css('display', 'flex');
+  });
 
   lightbox.option({
     'resizeDuration': 200,

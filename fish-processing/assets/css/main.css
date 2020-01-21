@@ -135,7 +135,7 @@ button {
 }
 .banner__title {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
 }
 .banner__title h1 {
   font-size: 60px;
@@ -144,6 +144,21 @@ button {
 .banner__title p {
   font-size: 22px;
   margin-top: 20px;
+  padding-left: 60px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.banner__title p:before {
+  content: "\f006";
+  font-family: 'FontAwesome';
+  font-size: 50px;
+  position: absolute;
+  left: 0;
 }
 .banner__form {
   width: 100%;
@@ -225,6 +240,16 @@ button {
 .info-block {
   padding-top: 40px;
 }
+.info-block__desc {
+  margin-bottom: 40px;
+}
+.info-block__desc p {
+  color: #1654c0;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+  font-family: "GothaProBol", sans-serif;
+}
 .info-block__title {
   width: 100%;
   max-width: 500px;
@@ -264,7 +289,7 @@ button {
   width: 144px;
 }
 .info-block__item-text {
-  padding: 20px;
+  padding: 15px;
 }
 .info-block__item-text strong {
   font-family: "GothaProBol", sans-serif;
@@ -273,6 +298,12 @@ button {
 .info-block__item-text ul li {
   color: #969696;
   line-height: 1.813;
+  position: relative;
+  font-size: 16px;
+}
+.info-block__item-text ul li:before {
+  content: '+';
+  margin-right: 5px;
 }
 .info-block__item-text a {
   border-bottom: 1px dashed #969696;
@@ -280,6 +311,15 @@ button {
   display: block;
   width: 215px;
   margin-top: 10px;
+  font-size: 16px;
+  position: relative;
+  margin-left: 16px;
+}
+.info-block__item-text a:before {
+  content: '+';
+  margin-right: 5px;
+  left: -16px;
+  position: absolute;
 }
 
 .topic {
@@ -444,9 +484,11 @@ button {
   background-image: url(../images/good.png);
 }
 
+.question {
+  margin-top: 50px;
+}
 .question__wrap {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px 40px;
   background-image: url(../images/question-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -457,14 +499,10 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 .question__title {
   width: 100%;
-  max-width: 330px;
-  margin: 0 auto;
+  max-width: 312px;
 }
 .question__title h2 {
   font-size: 22px;
@@ -474,10 +512,20 @@ button {
 }
 .question__form {
   width: 100%;
-  max-width: 315px;
 }
 .question__form form {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.question__form form input {
+  width: 100%;
+  max-width: 280px;
+  height: 65px;
+  margin-right: 10px;
 }
 .question__form p {
   margin-top: 10px;
@@ -498,8 +546,16 @@ button {
   margin-right: 5px;
 }
 
+.question2 .question__title {
+  max-width: 440px;
+}
+
 .advantages {
   padding-top: 40px;
+}
+.advantages .info-block__desc {
+  margin-bottom: 0;
+  margin-top: 40px;
 }
 .advantages__title h2 {
   font-size: 30px;
@@ -543,6 +599,25 @@ button {
 
 .reviews {
   padding-top: 40px;
+}
+.reviews .info-block__desc {
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+.reviews .info-block__desc p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.reviews .info-block__desc p i {
+  margin-right: 10px;
+  text-align: center;
 }
 .reviews__title h2 {
   font-size: 30px;
@@ -742,7 +817,7 @@ button {
     margin-left: 0;
   }
 }
-@media (max-width: 870px) {
+@media (max-width: 872px) {
   .advantages__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -754,7 +829,13 @@ button {
   }
 
   .advantages__item {
-    margin-left: 0;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .advantages__item:first-child {
+    margin: 0 auto;
+    margin-top: 20px;
   }
 
   .reviews__list {
@@ -774,8 +855,9 @@ button {
     margin-top: 20px;
   }
 
-  .reviews__item {
-    margin-right: 0;
+  .reviews__item:nth-child(even) {
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 850px) {
@@ -795,6 +877,10 @@ button {
   }
   .banner__title p {
     text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
   }
 
   .banner__title h1 {
@@ -864,6 +950,23 @@ button {
 
   .banner__title h1 {
     font-size: 30px;
+  }
+}
+@media (max-width: 415px) {
+  .banner__title p {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 0;
+  }
+
+  .banner__title p br {
+    display: none;
+  }
+
+  .banner__title p:before {
+    position: relative;
+    font-size: 35px;
   }
 }
 
