@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant:700|Montserrat:400,500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/lightbox.min.css">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>Каталог</title>
+</head>
+<body>
+<header class="header header-other">
+  <div class="container">
+    <div class="header__top">
+      <div class="header__logo">
+        <img src="assets/images/logo.png" alt="">
+      </div>
+      <div class="header__search">
+        <input type="search" placeholder="Поиск">
+      </div>
+      <div class="header__contacts">
+        <i>
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="24" fill="#F35955"/>
+            <path d="M27.99 35.5731C28.0345 35.9142 27.9306 36.2108 27.6787 36.4629L24.722 39.3992C24.5886 39.5475 24.4145 39.6737 24.1996 39.7774C23.9847 39.8812 23.7735 39.948 23.5661 39.9776C23.5513 39.9776 23.5067 39.9814 23.4326 39.9888C23.3586 39.9962 23.2622 40 23.1437 40C22.862 40 22.4062 39.9518 21.7764 39.8554C21.1465 39.7589 20.3758 39.5216 19.4644 39.1435C18.5528 38.7653 17.5191 38.198 16.3631 37.4417C15.2071 36.6855 13.9769 35.6473 12.6727 34.3273C11.6352 33.304 10.7756 32.3252 10.0939 31.3909C9.41212 30.4565 8.86375 29.5927 8.44877 28.7992C8.03375 28.0058 7.72251 27.2865 7.51502 26.6414C7.30753 25.9963 7.16673 25.4401 7.09263 24.973C7.01853 24.5058 6.98888 24.1388 7.00371 23.8718C7.01853 23.6049 7.02594 23.4566 7.02594 23.4269C7.05558 23.2193 7.12227 23.0079 7.22602 22.7929C7.32976 22.5779 7.45574 22.4036 7.60395 22.2701L10.5607 19.3114C10.7682 19.1038 11.0053 19 11.2721 19C11.4648 19 11.6352 19.0556 11.7834 19.1668C11.9316 19.2781 12.0576 19.4153 12.1613 19.5784L14.5401 24.0943C14.6735 24.3316 14.7105 24.5911 14.6512 24.8729C14.592 25.1547 14.466 25.3919 14.2733 25.5847L13.184 26.6748C13.1543 26.7044 13.1284 26.7526 13.1062 26.8194C13.0839 26.8861 13.0728 26.9417 13.0728 26.9862C13.1321 27.2977 13.2655 27.6536 13.473 28.054C13.6508 28.4099 13.925 28.8437 14.2955 29.3554C14.6661 29.867 15.1922 30.4565 15.874 31.1239C16.5409 31.8062 17.1337 32.3363 17.6525 32.7145C18.1711 33.0926 18.6047 33.3707 18.953 33.5487C19.3013 33.7267 19.5681 33.8342 19.7533 33.8712L20.0311 33.9268C20.0608 33.9268 20.109 33.9156 20.1757 33.8934C20.2424 33.8712 20.2905 33.8452 20.3202 33.8155L21.5873 32.5253C21.8543 32.288 22.1654 32.1694 22.5211 32.1694C22.7731 32.1694 22.9731 32.2139 23.1213 32.3029H23.1435L27.4341 34.8389C27.7454 35.0318 27.9307 35.2765 27.99 35.5731Z" fill="white"/>
+            <path d="M30.6251 20.684L39.8186 12.182C39.6742 12.078 39.4816 12 39.2891 12H21.9611C21.7686 12 21.576 12.078 21.4316 12.182L30.6251 20.684Z" fill="white"/>
+            <path d="M31.2524 21.464C30.8914 21.802 30.3619 21.802 30.0009 21.464L21 13.17V23.96C21 24.532 21.4332 25 21.9627 25H39.2907C39.8201 25 40.2533 24.532 40.2533 23.96V13.144L31.2524 21.464Z" fill="white"/>
+          </svg>
+        </i>
+        <ul>
+          <li><a href="tel:+7 (999) 612 50 15">+7 (999) 612 50 15</a></li>
+          <li><a href="mailto:semafor33@inbox.ru">semafor33@inbox.ru</a></li>
+        </ul>
+      </div>
+      <div class="header__cart">
+        <a href="#">
+          <i>
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z" fill="#F35955"/>
+              <g clip-path="url(#clip0)">
+                <path d="M36.8606 22.0002H35.2003L27.7807 10.8713C27.9112 10.6057 27.9995 10.3167 27.9995 10.0003C27.9995 8.89482 27.1045 8.00022 25.9992 8.00022C24.8951 8.00022 23.9993 8.89482 23.9993 10.0003C23.9993 11.1056 24.8951 12.0003 25.9992 12.0003C26.0405 12.0003 26.0755 11.9788 26.1146 11.977L32.798 22.0002H15.2017L21.8833 11.9769C21.9244 11.9788 21.9584 12.0003 21.9996 12.0003C23.104 12.0003 23.9993 11.1055 23.9993 10.0002C23.9993 8.89476 23.1039 8.00015 21.9996 8.00015C20.895 8.00015 19.9996 8.89476 19.9996 10.0002C19.9996 10.3166 20.0875 10.6036 20.2183 10.8694L12.7974 22.0002H11.1392C8.78091 22.0002 7.46264 23.8322 8.20781 26.0685L11.9273 35.0801C12.6726 37.3181 15.2116 37.9998 17.5688 37.9998H30.4286C32.7863 37.9998 35.3253 37.318 36.0735 35.0801L39.7901 26.0685C40.5384 23.8322 39.2161 22.0002 36.8606 22.0002ZM15.9997 32.9999C15.9997 33.5528 15.5522 33.9997 14.9995 33.9997C14.4469 33.9997 13.9997 33.5528 13.9997 32.9999V26.9999C13.9997 26.4474 14.4469 25.9999 14.9995 25.9999C15.5521 25.9999 15.9997 26.4474 15.9997 26.9999V32.9999ZM21.9996 32.9999C21.9996 33.5528 21.5521 33.9997 20.9994 33.9997C20.4466 33.9997 19.9996 33.5528 19.9996 32.9999V26.9999C19.9996 26.4474 20.4466 25.9999 20.9994 25.9999C21.5521 25.9999 21.9996 26.4474 21.9996 26.9999V32.9999ZM27.9996 32.9999C27.9996 33.5528 27.5521 33.9997 26.9993 33.9997C26.4468 33.9997 25.9993 33.5528 25.9993 32.9999V26.9999C25.9993 26.4474 26.4468 25.9999 26.9993 25.9999C27.5521 25.9999 27.9996 26.4474 27.9996 26.9999V32.9999ZM33.9993 32.9999C33.9993 33.5528 33.5521 33.9997 32.9993 33.9997C32.4465 33.9997 31.999 33.5528 31.999 32.9999V26.9999C31.999 26.4474 32.4465 25.9999 32.9993 25.9999C33.5521 25.9999 33.9993 26.4474 33.9993 26.9999V32.9999Z" fill="white"/>
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect x="8" y="7" width="32" height="32" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </i>
+        </a>
+        <ul>
+          <li>3 шт.</li>
+          <li>6100 р.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="header__menu">
+      <ul>
+        <li class="current"><a href="#">КАТАЛОГ</a></li>
+        <li><a href="#">О НАС</a></li>
+        <li><a href="#">СТАТЬИ</a></li>
+        <li><a href="#">КАК ЗАКАЗАТЬ</a></li>
+        <li><a href="#">ДОСТАВКА</a></li>
+        <li><a href="#">ОПАЛАТА</a></li>
+        <li><a href="#">ОТЗЫВЫ</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<section class="breadcrumbs">
+  <div class="container">
+    <ul>
+      <li>Главная</li>
+      <li>Каталог</li>
+    </ul>
+  </div>
+</section>
+<section class="catalog catalog-category">
+  <div class="container">
+    <div class="catalog__title">
+      <h2>
+        <a href="#">Наборы</a> <span>железных дорог</span>
+      </h2>
+    </div>
+    <div class="catalog__slide">
+      <div class="catalog__product">
+        <div class="catalog__product-name">
+          ДЕРЕВЯННАЯ ЖЕЛЕЗНАЯ ДОРОГА 69 ДЕТАЛЕЙ
+        </div>
+        <div class="catalog__product-preview">
+          <img src="assets/images/catalogP1.png" alt="">
+        </div>
+        <div class="catalog__product-price">
+          <div class="old">
+            <strike>5400 р.</strike>
+          </div>
+          <div class="actual">
+            3900 р.
+          </div>
+        </div>
+        <div class="catalog__product-buttons">
+          <button class="button-red">Купить</button>
+          <a href="#" class="more">Подробнее</a>
+        </div>
+      </div>
+      <div class="catalog__product">
+        <div class="catalog__product-name">
+          ДЕРЕВЯННАЯ ЖЕЛЕЗНАЯ ДОРОГА 40 ДЕТАЛЕЙ
+        </div>
+        <div class="catalog__product-preview">
+          <img src="assets/images/catalogP2.png" alt="">
+        </div>
+        <div class="catalog__product-price">
+          <div class="actual">
+            1100 р.
+          </div>
+        </div>
+        <div class="catalog__product-buttons">
+          <button class="button-red">Купить</button>
+          <a href="#" class="more">Подробнее</a>
+        </div>
+      </div>
+      <div class="catalog__product">
+        <div class="catalog__product-name">
+          ДЕРЕВЯННАЯ ЖЕЛЕЗНАЯ ДОРОГА 55 ДЕТАЛЕЙ
+        </div>
+        <div class="catalog__product-preview">
+          <img src="assets/images/catalogP3.png" alt="">
+        </div>
+        <div class="catalog__product-price">
+          <div class="admission">
+            Поступление <br> 31.01.2020
+          </div>
+          <div class="actual">
+            2700 р.
+          </div>
+        </div>
+        <div class="catalog__product-buttons">
+          <button class="button-red">Купить</button>
+          <a href="#" class="more">Подробнее</a>
+        </div>
+      </div>
+      <div class="catalog__product">
+        <div class="catalog__product-name">
+          ДЕРЕВЯННАЯ ЖЕЛЕЗНАЯ ДОРОГА 100 ДЕТАЛЕЙ
+        </div>
+        <div class="catalog__product-preview">
+          <img src="assets/images/catalogP4.png" alt="">
+        </div>
+        <div class="catalog__product-price">
+          <div class="admission">
+            Поступление <br> 10.01.2020
+          </div>
+          <div class="actual">
+            4700 р.
+          </div>
+        </div>
+        <div class="catalog__product-buttons">
+          <button class="button-red">Купить</button>
+          <a href="#" class="more">Подробнее</a>
+        </div>
+      </div>
+      <div class="catalog__product">
+        <div class="catalog__product-name">
+          ДЕРЕВЯННАЯ ЖЕЛЕЗНАЯ ДОРОГА 125 ДЕТАЛЕЙ
+        </div>
+        <div class="catalog__product-preview">
+          <img src="assets/images/catalogP5.png" alt="">
+        </div>
+        <div class="catalog__product-price">
+          <div class="admission">
+            Поступление <br> 15.01.2020
+          </div>
+          <div class="actual">
+            5900 р.
+          </div>
+        </div>
+        <div class="catalog__product-buttons">
+          <button class="button-red">Купить</button>
+          <a href="#" class="more">Подробнее</a>
+        </div>
+      </div>
+      <div class="catalog__product">
+        <div class="catalog__product-name">
+          ДЕРЕВЯННАЯ ЖЕЛЕЗНАЯ ДОРОГА 78 ДЕТАЛЕЙ
+        </div>
+        <div class="catalog__product-preview">
+          <img src="assets/images/catalogP6.png" alt="">
+        </div>
+        <div class="catalog__product-price">
+          <div class="admission">
+            Поступление <br> 15.01.2020
+          </div>
+          <div class="actual">
+            4500 р.
+          </div>
+        </div>
+        <div class="catalog__product-buttons">
+          <button class="button-red">Купить</button>
+          <a href="#" class="more">Подробнее</a>
+        </div>
+      </div>
+      <div class="catalog__product">
+        <div class="catalog__product-name">
+          ДЕРЕВЯННАЯ ЖЕЛЕЗНАЯ ДОРОГА 125 ДЕТАЛЕЙ
+        </div>
+        <div class="catalog__product-preview">
+          <img src="assets/images/catalogP5.png" alt="">
+        </div>
+        <div class="catalog__product-price">
+          <div class="admission">
+            Поступление <br> 15.01.2020
+          </div>
+          <div class="actual">
+            5900 р.
+          </div>
+        </div>
+        <div class="catalog__product-buttons">
+          <button class="button-red">Купить</button>
+          <a href="#" class="more">Подробнее</a>
+        </div>
+      </div>
+      <div class="catalog__product">
+        <div class="catalog__product-name">
+          ДЕРЕВЯННАЯ ЖЕЛЕЗНАЯ ДОРОГА 78 ДЕТАЛЕЙ
+        </div>
+        <div class="catalog__product-preview">
+          <img src="assets/images/catalogP6.png" alt="">
+        </div>
+        <div class="catalog__product-price">
+          <div class="admission">
+            Поступление <br> 15.01.2020
+          </div>
+          <div class="actual">
+            4500 р.
+          </div>
+        </div>
+        <div class="catalog__product-buttons">
+          <button class="button-red">Купить</button>
+          <a href="#" class="more">Подробнее</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="catalog catalog-category catalog-before">
+  <div class="container">
+    <div class="catalog__title">
+      <h2>
+        <a href="#">Элементы</a> <span>железных дорог</span>
+      </h2>
+    </div>
+    <div class="catalog__slide">
+      <div class="catalog__product">
+        <div class="catalog__product-name">
+          ДЕРЕВЯННЫЙ ЭЛЕКТРИЧЕСКИЙ ВАГОН 1 ШТ.
+        </div>
+        <div class="catalog__product-preview">
+          <img src="assets/images/gd1.png" alt="">
+        </div>
+        <div class="catalog__product-price">
+          <div class="actual">
+            600 р.
+          </div>
+        </div>
+        <div class="catalog__product-buttons">
+          <button class="button-red">Купить</button>
+          <a href="#" class="more">Подробнее</a>
+        </div>
+      </div>
+      <div class="catalog__product">
+        <div class="catalog__product-name">
+          ДЕРЕВЯННЫЙ ПРЯМОЙ ЭЛЕМЕНТ РЕЛЬСЫ 1 ШТ.
+        </div>
+        <div class="catalog__product-preview">
+          <img src="assets/images/gd2.png" alt="">
+        </div>
+        <div class="catalog__product-price">
+          <div class="actual">
+            140 р.
+          </div>
+        </div>
+        <div class="catalog__product-buttons">
+          <button class="button-red">Купить</button>
+          <a href="#" class="more">Подробнее</a>
+        </div>
+      </div>
+      <div class="catalog__product">
+        <div class="catalog__product-name">
+          ДЕРЕВЯННЫЙ ПОРТОВЫЙ КРАН НА КОЛЕСАХ
+        </div>
+        <div class="catalog__product-preview">
+          <img src="assets/images/gd3.png" alt="">
+        </div>
+        <div class="catalog__product-price">
+          <div class="actual">
+            800 р.
+          </div>
+        </div>
+        <div class="catalog__product-buttons">
+          <button class="button-red">Купить</button>
+          <a href="#" class="more">Подробнее</a>
+        </div>
+      </div>
+      <div class="catalog__product">
+        <div class="catalog__product-name">
+          ДЕРЕВЯННАЯ ПОДЪЕМНАЯ ДОРОЖКА
+        </div>
+        <div class="catalog__product-preview">
+          <img src="assets/images/gd4.png" alt="">
+        </div>
+        <div class="catalog__product-price">
+          <div class="actual">
+            550 р.
+          </div>
+        </div>
+        <div class="catalog__product-buttons">
+          <button class="button-red">Купить</button>
+          <a href="#" class="more">Подробнее</a>
+        </div>
+      </div>
+      <div class="catalog__product">
+        <div class="catalog__product-name">
+          ДЕРЕВЯННЫЙ ИЗОГНУТЫЙ ЭЛЕМЕНТ РЕЛЬСЫ 1 ШТ,
+        </div>
+        <div class="catalog__product-preview">
+          <img src="assets/images/gd5.png" alt="">
+        </div>
+        <div class="catalog__product-price">
+          <div class="actual">
+            160 р.
+          </div>
+        </div>
+        <div class="catalog__product-buttons">
+          <button class="button-red">Купить</button>
+          <a href="#" class="more">Подробнее</a>
+        </div>
+      </div>
+      <div class="catalog__product">
+        <div class="catalog__product-name">
+          ДЕРЕВЯННЫЙ ДОМИК ДЛЯ ПОЕЗДОВ
+        </div>
+        <div class="catalog__product-preview">
+          <img src="assets/images/gd6.png" alt="">
+        </div>
+        <div class="catalog__product-price">
+          <div class="actual">
+            500 р.
+          </div>
+        </div>
+        <div class="catalog__product-buttons">
+          <button class="button-red">Купить</button>
+          <a href="#" class="more">Подробнее</a>
+        </div>
+      </div>
+      <div class="catalog__product">
+        <div class="catalog__product-name">
+          ТОННЕЛЬ - СКАЛА ДЛЯ ДЕРЕВЯННОЙ ЖД
+        </div>
+        <div class="catalog__product-preview">
+          <img src="assets/images/gd7.png" alt="">
+        </div>
+        <div class="catalog__product-price">
+          <div class="actual">
+            700 р.
+          </div>
+        </div>
+        <div class="catalog__product-buttons">
+          <button class="button-red">Купить</button>
+          <a href="#" class="more">Подробнее</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="catalog catalog-category catalog-after">
+  <div class="container">
+    <div class="catalog__title">
+      <h2>
+        <span>Железные дороги</span> <a href="#">со столом</a>
+      </h2>
+    </div>
+    <div class="catalog__slide">
+      <div class="catalog__product">
+        <div class="catalog__product-name">
+          ДЕРЕВЯННАЯ ЖЕЛЕЗНАЯ ДОРОГА 98 ДЕТАЛЕЙ
+        </div>
+        <div class="catalog__product-preview">
+          <img src="assets/images/strol1.png" alt="">
+        </div>
+        <div class="catalog__product-price">
+          <div class="admission">
+            Поступление <br> 15.01.2020
+          </div>
+          <div class="actual">
+            7600 р.
+          </div>
+        </div>
+        <div class="catalog__product-buttons">
+          <button class="button-red">Купить</button>
+          <a href="#" class="more">Подробнее</a>
+        </div>
+      </div>
+      <div class="catalog__product">
+        <div class="catalog__product-name">
+          ДЕРЕВЯННАЯ ЖЕЛЕЗНАЯ ДОРОГА 108 ДЕТАЛЕЙ
+        </div>
+        <div class="catalog__product-preview">
+          <img src="assets/images/strol1.png" alt="">
+        </div>
+        <div class="catalog__product-price">
+          <div class="admission">
+            Поступление <br> 15.01.2020
+          </div>
+          <div class="actual">
+            8400 р.
+          </div>
+        </div>
+        <div class="catalog__product-buttons">
+          <button class="button-red">Купить</button>
+          <a href="#" class="more">Подробнее</a>
+        </div>
+      </div>
+      <div class="catalog__product">
+        <div class="catalog__product-name">
+          ДЕРЕВЯННАЯ ЖЕЛЕЗНАЯ ДОРОГА 90 ДЕТАЛЕЙ
+        </div>
+        <div class="catalog__product-preview">
+          <img src="assets/images/strol3.png" alt="">
+        </div>
+        <div class="catalog__product-price">
+          <div class="actual">
+            8900 р.
+          </div>
+        </div>
+        <div class="catalog__product-buttons">
+          <button class="button-red">Купить</button>
+          <a href="#" class="more">Подробнее</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer footer-other">
+  <div class="container">
+    <div class="footer__logo">
+      <a href="/">
+        <img src="assets/images/footer-logo.png" alt="">
+      </a>
+    </div>
+    <div class="footer__menu">
+      <ul>
+        <li><a href="#">КАТАЛОГ</a></li>
+        <li><a href="#">О НАС</a></li>
+        <li><a href="#">СТАТЬИ</a></li>
+        <li><a href="#">КАК ЗАКАЗАТЬ</a></li>
+        <li><a href="#">ДОСТАВКА</a></li>
+        <li><a href="#">ОПАЛАТА</a></li>
+        <li><a href="#">ОТЗЫВЫ</a></li>
+      </ul>
+    </div>
+    <div class="footer__contacts">
+      <a href="tel:+7 (999) 612 50 15">
+        <i class="fa fa-phone" aria-hidden="true"></i>
+        +7 (999) 612 50 15
+      </a>
+      <a href="mailto:semafor33@inbox.ru">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        semafor33@inbox.ru
+      </a>
+    </div>
+    <div class="footer__button">
+      <button class="button-red callback">Оставить заявку</button>
+    </div>
+  </div>
+  <div class="copyright">
+    <a href="#">Политика в отношени и обработки данных</a>
+  </div>
+</footer>
+
+<div class="modal">
+  <div class="modal__window">
+    <button class="close">
+      <i class="fa fa-times-circle" aria-hidden="true"></i>
+    </button>
+    <div class="modal__title">
+      <h3>
+        Оставьте заявку, <br>
+        и мы с Вами свяжемся
+      </h3>
+    </div>
+    <form>
+      <div class="modal__input">
+        <input type="text" name="name" placeholder="Ваше имя*">
+      </div>
+      <div class="modal__input">
+        <input type="tel" name="tel" placeholder="Телефон*" class="phone">
+      </div>
+      <div class="modal__input">
+        <input type="email" name="email" placeholder="Email">
+      </div>
+      <div class="modal__submit">
+        <input class="button-red" type="submit" value="Оставить заявку">
+      </div>
+    </form>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/lightbox.min.js"></script>
+<script src="assets/js/jquery.maskedinput.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
