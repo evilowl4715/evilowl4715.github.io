@@ -2,11 +2,11 @@
 
 $name = $_POST['name'];
 $phone = $_POST['phone'];
-$hidden = $_POST['hidden'];
+$liter = $_POST['liter'];
 
-$to      = 'info@metod-prodazh.ru';
+$to      = 'maslosbor.spb@yandex.ru';
 $subject = "=?utf-8?B?".base64_encode("Перезвоните мне")."?=";
-$headers = "От: $hidden $name, $phone";
+$headers = "От: $name, $phone, $liter";
 
 $success = mail($to, $subject, $headers);
 echo $success;
