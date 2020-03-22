@@ -8,7 +8,7 @@
 }
 a {
   text-decoration: none;
-  color: #fcda3d;
+  color: #2d2d2d;
   cursor: pointer;
 }
 p {
@@ -53,11 +53,7 @@ button,
 }
 
 .section-1 {
-  background-image: url(../images/bg-black.png);
-  background-repeat: repeat-y;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center top;
+  background-image: linear-gradient(to top, #eaad29 0%, #f3d448 100%);
   .container {
     display: flex;
     justify-content: space-between;
@@ -65,17 +61,12 @@ button,
   &__title {
     h1 {
       font-size: 48px;
-      color: #fcda3d;
-      background: linear-gradient(to top, #f6c031 0%, #fff05f 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: #2d2d2d;
       line-height: 55px;
       font-family: "HelveticaNeueCyr-Medium", sans-serif;
     }
     h3 {
-      background-image: linear-gradient(to top, #f6c031 0%, #fff05f 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: #2d2d2d;
       font-family: "HelveticaNeueCyr-Roman", sans-serif;
       font-size: 20px;
       margin-top: 10px;
@@ -84,13 +75,16 @@ button,
       margin-top: 40px;
       line-height: 30px;
       font-size: 24px;
-      color: #f8f5e7;
+      color: #2d2d2d;
       margin-bottom: 70px;
+    }
+    button {
+      box-shadow: 0 5px 5px 1px #6a4b03;
     }
   }
   &__img {
     width: 100%;
-    max-width: 630px;
+    max-width: 660px;
     margin-left: 20px;
     img {
       width: 100%;
@@ -117,6 +111,7 @@ button,
           border-radius: 50%;
           margin-bottom: -20px;
           animation: up-down 2s infinite;
+          box-shadow: 0 0 17px 7px rgba(119, 83, 6, 0.25);
           @-webkit-keyframes up-down {
             0% {
               margin-top: -23px;
@@ -180,7 +175,7 @@ button,
   &__address {
     position: relative;
     display: flex;
-    color: #fcda3d;
+    color: #2d2d2d;
     font-family: "HelveticaNeueCyr-Medium", sans-serif;
     line-height: 22px;
     i {
@@ -200,7 +195,7 @@ button,
   &__time {
     position: relative;
     display: flex;
-    color: #fcda3d;
+    color: #2d2d2d;
     font-family: "HelveticaNeueCyr-Medium", sans-serif;
     line-height: 22px;
     i {
@@ -219,7 +214,7 @@ button,
   }
   &__phone {
     position: relative;
-    color: #fcda3d;
+    color: #2d2d2d;
     font-family: "HelveticaNeueCyr-Medium", sans-serif;
     line-height: 22px;
     i {
@@ -240,6 +235,7 @@ button,
     button {
       width: 100%;
       max-width: 200px;
+      box-shadow: 0 5px 5px 1px #6a4b03;
     }
   }
 }
@@ -357,7 +353,7 @@ button,
   }
 }
 .about {
-  background-color: #f3d448;
+  background-image: linear-gradient(to top, #eaad29 0%, #f3d448 100%);
   padding-top: 60px;
   padding-bottom: 80px;
   &__title {
@@ -411,47 +407,81 @@ button,
       font-family: "HelveticaNeueCyr-Medium", sans-serif;
     }
   }
-  &__row {
-    width: 100%;
-    max-width: 830px;
-    background-image: linear-gradient(to top, #f6c031 0%, #fff05f 100%);
+  &__block {
     margin: 0 auto;
-    border-bottom: 1px solid #732a00;
+    width: 100%;
+    padding: 50px 10px;
+    max-width: 827px;
+    background-image: linear-gradient(to top, #eaad29 0%, #f3d448 100%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    h3 {
+      font-size: 24px;
+      color: #000000;
+      font-family: "HelveticaNeueCyr-Medium", sans-serif;
+      margin-bottom: 30px;
+    }
+    span {
+      font-size: 18px;
+      color: #2d2d2d;
+      font-family: "HelveticaNeueCyr-Medium", sans-serif;
+      position: relative;
+      &:before {
+        content: '';
+        display: block;
+        background-image: url(../images/arrows.png);
+        width: 373px;
+        height: 81px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-54%);
+        top: 20px;
+      }
+    }
+  }
+  &__list {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 60px;
-    font-size: 24px;
-    color: #000;
-    font-family: "HelveticaNeueCyr-Medium", sans-serif;
   }
-  .row-1 {
-    height: 90px;
-  }
-  .row-3 {
-    justify-content: space-between;
-    padding: 0 137px;
-  }
-  &__address {
-    width: 100%;
-    max-width: 830px;
-    margin: 0 auto;
-    margin-top: 20px;
-    font-size: 17px;
-    font-family: "HelveticaNeueCyr-Medium", sans-serif;
-    color: #f8f5e7;
+  &__item {
+    margin: 0 50px;
+    margin-top: 70px;
+    &:nth-child(2) {
+      margin-top: 50px;
+    }
+    i {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 110px;
+      height: 110px;
+      background-color: #333333;
+      border-radius: 50%;
+    }
+    p {
+      color: #2d2d2d;
+      font-family: "HelveticaNeueCyr-Medium", sans-serif;
+      font-size: 18px;
+      margin-top: 20px;
+    }
   }
   &__text {
-    font-family: "HelveticaNeueCyr-Medium", sans-serif;
-    width: 100%;
-    max-width: 830px;
-    margin: 0 auto;
-    margin-top: 30px;
-    font-size: 17px;
-    background-image: linear-gradient(to top, #f6c031 0%, #fff05f 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    line-height: 22px;
+    text-align: center;
+    margin-top: 50px;
+    h3 {
+      color: #2d2d2d;
+      font-family: "HelveticaNeueCyr-Medium", sans-serif;
+      font-size: 24px;
+    }
+    p {
+      color: #2d2d2d;
+      font-family: "HelveticaNeueCyr-Medium", sans-serif;
+      font-size: 18px;
+      margin-top: 20px;
+      margin-top: 25px;
+    }
   }
 }
 .offer {
@@ -543,6 +573,9 @@ button,
     display: flex;
     flex-direction: column;
     line-height: 22px;
+    a {
+      color: #fcda3d;
+    }
     i {
       margin-right: 5px;
       path {
@@ -855,6 +888,20 @@ button,
   }
   .mob-contacts .header__time {
     margin: 20px 0;
+  }
+  .price__block span:before {
+    display: none;
+  }
+  .price__item {
+    margin: 0 auto;
+    margin-top: 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .price__list {
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media (max-width: 500px) {

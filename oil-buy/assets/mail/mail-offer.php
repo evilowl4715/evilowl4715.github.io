@@ -5,7 +5,7 @@ $phone = $_POST['phone'];
 $liter = $_POST['liter'];
 
 $to      = 'maslosbor.spb@yandex.ru';
-$subject = "=?utf-8?B?".base64_encode("КУПЛЮ: Перезвоните мне")."?=";
+$subject = "=?utf-8?B?".base64_encode("ПРОДАМ: Лучшее предложение")."?=";
 $headers = "От: $name, $phone, $liter";
 
 $success = mail($to, $subject, $headers);

@@ -15,28 +15,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scss/main.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3267">
-              <caret line="121" column="29" selection-start-line="121" selection-start-column="29" selection-end-line="121" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6129">
-              <caret line="433" column="108" selection-start-line="433" selection-start-column="103" selection-end-line="433" selection-end-column="108" />
+            <state relative-caret-position="563">
+              <caret line="189" column="8" lean-forward="true" selection-start-line="189" selection-start-column="8" selection-end-line="189" selection-end-column="8" />
               <folding>
                 <element signature="n#div#1;n#div#0;n#header#0;n#section#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#2;n#div#0;n#header#0;n#section#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#3;n#div#0;n#header#0;n#section#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#1;n#div#0;n#div#1;n#header#0;n#section#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#2;n#div#0;n#div#1;n#header#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#1;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#1;n#div#1;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#2;n#div#1;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#3;n#div#1;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
@@ -48,33 +37,6 @@
                 <element signature="n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/mail/mail-consultation.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/mail/mail-offer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/mail/mail-popup.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="7" column="44" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -93,11 +55,20 @@
       <find>soc</find>
       <find>address</find>
       <find>mob-contacts§</find>
-      <find>header</find>
       <find>.header__callback</find>
       <find>fill-opacity</find>
       <find>phone</find>
       <find>scro</find>
+      <find>header</find>
+      <find>abou</find>
+      <find>Наши цен</find>
+      <find>opa</find>
+      <find>opac</find>
+      <find>price</find>
+      <find>opas</find>
+      <find>600</find>
+      <find>footer</find>
+      <find>преиму</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -105,16 +76,16 @@
       <list>
         <option value="$PROJECT_DIR$/scss/_fonts.scss" />
         <option value="$PROJECT_DIR$/assets/mail/mail-course.php" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/js/main.js" />
         <option value="$PROJECT_DIR$/scss/main.scss" />
-        <option value="$PROJECT_DIR$/assets/mail/mail-popup.php" />
-        <option value="$PROJECT_DIR$/assets/mail/mail-offer.php" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/mail/mail-consultation.php" />
+        <option value="$PROJECT_DIR$/assets/mail/mail-offer.php" />
+        <option value="$PROJECT_DIR$/assets/mail/mail-popup.php" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="142" />
     <option name="width" value="1440" />
     <option name="height" value="758" />
@@ -128,36 +99,19 @@
         <subPane>
           <expand>
             <path>
-              <item name="oil-sale" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oil-sale" type="462c0819:PsiDirectoryNode" />
+              <item name="oil-buy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oil-buy" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="oil-sale" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oil-sale" type="462c0819:PsiDirectoryNode" />
+              <item name="oil-buy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oil-buy" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="oil-sale" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oil-sale" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oil-sale" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oil-sale" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oil-sale" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oil-sale" type="462c0819:PsiDirectoryNode" />
+              <item name="oil-buy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oil-buy" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="mail" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oil-sale" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oil-sale" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -209,20 +163,21 @@
       <updated>1583524699116</updated>
       <workItem from="1583524700721" duration="5186000" />
       <workItem from="1583571561546" duration="12159000" />
-      <workItem from="1583755823672" duration="1762000" />
-      <workItem from="1583771574966" duration="57000" />
-      <workItem from="1583773322284" duration="35000" />
+      <workItem from="1583755823672" duration="1261000" />
+      <workItem from="1583758135139" duration="4734000" />
+      <workItem from="1583773271319" duration="15000" />
+      <workItem from="1583774445158" duration="163000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19199000" />
+    <option name="totallyTimeSpent" value="23518000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <frame x="0" y="142" width="1440" height="758" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14091559" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1423462" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -247,13 +202,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scss/_fonts.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
@@ -261,25 +209,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scss/_fonts.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scss/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3267">
-          <caret line="121" column="29" selection-start-line="121" selection-start-column="29" selection-end-line="121" selection-end-column="29" />
+        <state relative-caret-position="407">
+          <caret line="577" column="5" selection-start-line="577" selection-start-column="5" selection-end-line="577" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/mail/mail-popup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/mail/mail-offer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/mail/mail-consultation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="45" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6129">
-          <caret line="433" column="108" selection-start-line="433" selection-start-column="103" selection-end-line="433" selection-end-column="108" />
+        <state relative-caret-position="563">
+          <caret line="189" column="8" lean-forward="true" selection-start-line="189" selection-start-column="8" selection-end-line="189" selection-end-column="8" />
           <folding>
             <element signature="n#div#1;n#div#0;n#header#0;n#section#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#2;n#div#0;n#header#0;n#section#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#3;n#div#0;n#header#0;n#section#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#div#0;n#div#1;n#header#0;n#section#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#2;n#div#0;n#div#1;n#header#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#div#1;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#2;n#div#1;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#3;n#div#1;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
@@ -291,27 +265,6 @@
             <element signature="n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/mail/mail-popup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="44" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/mail/mail-offer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/mail/mail-consultation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
         </state>
       </provider>
     </entry>
