@@ -169,13 +169,15 @@ function openGoods(e) {
   const target = e.target;
   const restaurant = target.closest('.card-restaurant');
 
-  if(restaurant) {
+  if(restaurant && login) {
     cardsMenu.textContent = '';
     containerPromo.classList.add('hide');
     restaurants.classList.add('hide');
     menu.classList.remove('hide');
 
     createCardGood();
+  } else {
+    toggleModalAuth();
   }
 }
 
